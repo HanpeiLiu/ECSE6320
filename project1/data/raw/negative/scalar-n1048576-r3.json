@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/build/negative-scalar",
+    "1048576"
+  ],
+  "started_utc": "2026-10-23T21:03:44.652771+00:00",
+  "elapsed_wall_s": 0.04920537490397692,
+  "returncode": 0,
+  "stdout": "{\"build\":\"scalar\",\"n\":1048576,\"iterations\":10,\"elapsed_ns\":28743375,\"ns_per_element\":2.74118185,\"cycles_per_element\":10.4622305,\"cycles\":109704438,\"correctness\":true,\"reference\":-0.32421875,\"result\":-0.32421875}\n",
+  "stderr": ""
+}

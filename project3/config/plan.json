@@ -1,0 +1,477 @@
+{
+  "created_utc": "2026-10-23T20:27:46.630237+00:00",
+  "trials": 3,
+  "file_bytes": 1073741824,
+  "write_budget_bytes": 111669149696,
+  "worst_case_write_bytes": 104220065792,
+  "seed": 6320,
+  "device_state": "bounded current-state/burst tests; no forced SLC exhaustion",
+  "cases": [
+    {
+      "id": "read-b4096-q1-range1073741824-direct1-r100",
+      "runtime": "1s",
+      "io_bytes": 4294967296,
+      "rw": "read",
+      "bs": 4096,
+      "qd": 1,
+      "suites": [
+        "block_pattern"
+      ]
+    },
+    {
+      "id": "write-b4096-q1-range1073741824-direct1-r0",
+      "runtime": "1s",
+      "io_bytes": 2147483648,
+      "rw": "write",
+      "bs": 4096,
+      "qd": 1,
+      "suites": [
+        "block_pattern"
+      ]
+    },
+    {
+      "id": "randread-b4096-q1-range1073741824-direct1-r100",
+      "runtime": "1s",
+      "io_bytes": 4294967296,
+      "rw": "randread",
+      "bs": 4096,
+      "qd": 1,
+      "suites": [
+        "block_pattern",
+        "zero_queue",
+        "queue_depth"
+      ]
+    },
+    {
+      "id": "randwrite-b4096-q1-range1073741824-direct1-r0",
+      "runtime": "1s",
+      "io_bytes": 2147483648,
+      "rw": "randwrite",
+      "bs": 4096,
+      "qd": 1,
+      "suites": [
+        "block_pattern",
+        "zero_queue"
+      ]
+    },
+    {
+      "id": "read-b16384-q1-range1073741824-direct1-r100",
+      "runtime": "1s",
+      "io_bytes": 4294967296,
+      "rw": "read",
+      "bs": 16384,
+      "qd": 1,
+      "suites": [
+        "block_pattern"
+      ]
+    },
+    {
+      "id": "write-b16384-q1-range1073741824-direct1-r0",
+      "runtime": "1s",
+      "io_bytes": 2147483648,
+      "rw": "write",
+      "bs": 16384,
+      "qd": 1,
+      "suites": [
+        "block_pattern"
+      ]
+    },
+    {
+      "id": "randread-b16384-q1-range1073741824-direct1-r100",
+      "runtime": "1s",
+      "io_bytes": 4294967296,
+      "rw": "randread",
+      "bs": 16384,
+      "qd": 1,
+      "suites": [
+        "block_pattern"
+      ]
+    },
+    {
+      "id": "randwrite-b16384-q1-range1073741824-direct1-r0",
+      "runtime": "1s",
+      "io_bytes": 2147483648,
+      "rw": "randwrite",
+      "bs": 16384,
+      "qd": 1,
+      "suites": [
+        "block_pattern"
+      ]
+    },
+    {
+      "id": "read-b32768-q1-range1073741824-direct1-r100",
+      "runtime": "1s",
+      "io_bytes": 4294967296,
+      "rw": "read",
+      "bs": 32768,
+      "qd": 1,
+      "suites": [
+        "block_pattern"
+      ]
+    },
+    {
+      "id": "write-b32768-q1-range1073741824-direct1-r0",
+      "runtime": "1s",
+      "io_bytes": 2147483648,
+      "rw": "write",
+      "bs": 32768,
+      "qd": 1,
+      "suites": [
+        "block_pattern"
+      ]
+    },
+    {
+      "id": "randread-b32768-q1-range1073741824-direct1-r100",
+      "runtime": "1s",
+      "io_bytes": 4294967296,
+      "rw": "randread",
+      "bs": 32768,
+      "qd": 1,
+      "suites": [
+        "block_pattern"
+      ]
+    },
+    {
+      "id": "randwrite-b32768-q1-range1073741824-direct1-r0",
+      "runtime": "1s",
+      "io_bytes": 2147483648,
+      "rw": "randwrite",
+      "bs": 32768,
+      "qd": 1,
+      "suites": [
+        "block_pattern"
+      ]
+    },
+    {
+      "id": "read-b65536-q1-range1073741824-direct1-r100",
+      "runtime": "1s",
+      "io_bytes": 4294967296,
+      "rw": "read",
+      "bs": 65536,
+      "qd": 1,
+      "suites": [
+        "block_pattern"
+      ]
+    },
+    {
+      "id": "write-b65536-q1-range1073741824-direct1-r0",
+      "runtime": "1s",
+      "io_bytes": 2147483648,
+      "rw": "write",
+      "bs": 65536,
+      "qd": 1,
+      "suites": [
+        "block_pattern"
+      ]
+    },
+    {
+      "id": "randread-b65536-q1-range1073741824-direct1-r100",
+      "runtime": "1s",
+      "io_bytes": 4294967296,
+      "rw": "randread",
+      "bs": 65536,
+      "qd": 1,
+      "suites": [
+        "block_pattern"
+      ]
+    },
+    {
+      "id": "randwrite-b65536-q1-range1073741824-direct1-r0",
+      "runtime": "1s",
+      "io_bytes": 2147483648,
+      "rw": "randwrite",
+      "bs": 65536,
+      "qd": 1,
+      "suites": [
+        "block_pattern"
+      ]
+    },
+    {
+      "id": "read-b131072-q1-range1073741824-direct1-r100",
+      "runtime": "1s",
+      "io_bytes": 4294967296,
+      "rw": "read",
+      "bs": 131072,
+      "qd": 1,
+      "suites": [
+        "block_pattern",
+        "zero_queue"
+      ]
+    },
+    {
+      "id": "write-b131072-q1-range1073741824-direct1-r0",
+      "runtime": "1s",
+      "io_bytes": 2147483648,
+      "rw": "write",
+      "bs": 131072,
+      "qd": 1,
+      "suites": [
+        "block_pattern",
+        "zero_queue"
+      ]
+    },
+    {
+      "id": "randread-b131072-q1-range1073741824-direct1-r100",
+      "runtime": "1s",
+      "io_bytes": 4294967296,
+      "rw": "randread",
+      "bs": 131072,
+      "qd": 1,
+      "suites": [
+        "block_pattern"
+      ]
+    },
+    {
+      "id": "randwrite-b131072-q1-range1073741824-direct1-r0",
+      "runtime": "1s",
+      "io_bytes": 2147483648,
+      "rw": "randwrite",
+      "bs": 131072,
+      "qd": 1,
+      "suites": [
+        "block_pattern"
+      ]
+    },
+    {
+      "id": "read-b262144-q1-range1073741824-direct1-r100",
+      "runtime": "1s",
+      "io_bytes": 4294967296,
+      "rw": "read",
+      "bs": 262144,
+      "qd": 1,
+      "suites": [
+        "block_pattern"
+      ]
+    },
+    {
+      "id": "write-b262144-q1-range1073741824-direct1-r0",
+      "runtime": "1s",
+      "io_bytes": 2147483648,
+      "rw": "write",
+      "bs": 262144,
+      "qd": 1,
+      "suites": [
+        "block_pattern"
+      ]
+    },
+    {
+      "id": "randread-b262144-q1-range1073741824-direct1-r100",
+      "runtime": "1s",
+      "io_bytes": 4294967296,
+      "rw": "randread",
+      "bs": 262144,
+      "qd": 1,
+      "suites": [
+        "block_pattern"
+      ]
+    },
+    {
+      "id": "randwrite-b262144-q1-range1073741824-direct1-r0",
+      "runtime": "1s",
+      "io_bytes": 2147483648,
+      "rw": "randwrite",
+      "bs": 262144,
+      "qd": 1,
+      "suites": [
+        "block_pattern"
+      ]
+    },
+    {
+      "id": "randrw-b4096-q16-range1073741824-direct1-r70",
+      "runtime": "1s",
+      "io_bytes": 2147483648,
+      "rw": "randrw",
+      "bs": 4096,
+      "qd": 16,
+      "readpct": 70,
+      "suites": [
+        "rw_mix"
+      ]
+    },
+    {
+      "id": "randrw-b4096-q16-range1073741824-direct1-r50",
+      "runtime": "1s",
+      "io_bytes": 2147483648,
+      "rw": "randrw",
+      "bs": 4096,
+      "qd": 16,
+      "readpct": 50,
+      "suites": [
+        "rw_mix"
+      ]
+    },
+    {
+      "id": "randread-b4096-q16-range1073741824-direct1-r100",
+      "runtime": "1s",
+      "io_bytes": 4294967296,
+      "rw": "randread",
+      "bs": 4096,
+      "qd": 16,
+      "suites": [
+        "rw_mix",
+        "queue_depth",
+        "working_range"
+      ]
+    },
+    {
+      "id": "randwrite-b4096-q16-range1073741824-direct1-r0",
+      "runtime": "1s",
+      "io_bytes": 2147483648,
+      "rw": "randwrite",
+      "bs": 4096,
+      "qd": 16,
+      "suites": [
+        "rw_mix"
+      ]
+    },
+    {
+      "id": "randread-b4096-q2-range1073741824-direct1-r100",
+      "runtime": "1s",
+      "io_bytes": 4294967296,
+      "rw": "randread",
+      "bs": 4096,
+      "qd": 2,
+      "suites": [
+        "queue_depth"
+      ]
+    },
+    {
+      "id": "randread-b4096-q4-range1073741824-direct1-r100",
+      "runtime": "1s",
+      "io_bytes": 4294967296,
+      "rw": "randread",
+      "bs": 4096,
+      "qd": 4,
+      "suites": [
+        "queue_depth"
+      ]
+    },
+    {
+      "id": "randread-b4096-q8-range1073741824-direct1-r100",
+      "runtime": "1s",
+      "io_bytes": 4294967296,
+      "rw": "randread",
+      "bs": 4096,
+      "qd": 8,
+      "suites": [
+        "queue_depth"
+      ]
+    },
+    {
+      "id": "randread-b4096-q32-range1073741824-direct1-r100",
+      "runtime": "1s",
+      "io_bytes": 4294967296,
+      "rw": "randread",
+      "bs": 4096,
+      "qd": 32,
+      "suites": [
+        "queue_depth"
+      ]
+    },
+    {
+      "id": "randread-b4096-q64-range1073741824-direct1-r100",
+      "runtime": "1s",
+      "io_bytes": 4294967296,
+      "rw": "randread",
+      "bs": 4096,
+      "qd": 64,
+      "suites": [
+        "queue_depth"
+      ]
+    },
+    {
+      "id": "randread-b4096-q128-range1073741824-direct1-r100",
+      "runtime": "1s",
+      "io_bytes": 4294967296,
+      "rw": "randread",
+      "bs": 4096,
+      "qd": 128,
+      "suites": [
+        "queue_depth"
+      ]
+    },
+    {
+      "id": "randread-b4096-q256-range1073741824-direct1-r100",
+      "runtime": "1s",
+      "io_bytes": 4294967296,
+      "rw": "randread",
+      "bs": 4096,
+      "qd": 256,
+      "suites": [
+        "queue_depth"
+      ]
+    },
+    {
+      "id": "read-b262144-q16-range1073741824-direct1-r100",
+      "runtime": "1s",
+      "io_bytes": 4294967296,
+      "rw": "read",
+      "bs": 262144,
+      "qd": 16,
+      "suites": [
+        "large_block_peak"
+      ]
+    },
+    {
+      "id": "write-b262144-q16-range1073741824-direct1-r0",
+      "runtime": "1s",
+      "io_bytes": 2147483648,
+      "rw": "write",
+      "bs": 262144,
+      "qd": 16,
+      "suites": [
+        "large_block_peak"
+      ]
+    },
+    {
+      "id": "randread-b4096-q16-range67108864-direct1-r100",
+      "runtime": "1s",
+      "io_bytes": 4294967296,
+      "rw": "randread",
+      "bs": 4096,
+      "qd": 16,
+      "size": 67108864,
+      "suites": [
+        "working_range"
+      ]
+    },
+    {
+      "id": "randread-b4096-q16-range268435456-direct1-r100",
+      "runtime": "1s",
+      "io_bytes": 4294967296,
+      "rw": "randread",
+      "bs": 4096,
+      "qd": 16,
+      "size": 268435456,
+      "suites": [
+        "working_range"
+      ]
+    },
+    {
+      "id": "randread-b4096-q1-range67108864-direct0-r100",
+      "runtime": "1s",
+      "io_bytes": 4294967296,
+      "rw": "randread",
+      "bs": 4096,
+      "qd": 1,
+      "size": 67108864,
+      "direct": 0,
+      "suites": [
+        "pitfall_buffered"
+      ]
+    },
+    {
+      "id": "randread-b4096-q1-range67108864-direct1-r100",
+      "runtime": "1s",
+      "io_bytes": 4294967296,
+      "rw": "randread",
+      "bs": 4096,
+      "qd": 1,
+      "size": 67108864,
+      "direct": 1,
+      "suites": [
+        "pitfall_buffered"
+      ]
+    }
+  ]
+}

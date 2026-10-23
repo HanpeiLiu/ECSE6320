@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project2/build/memory-u64",
+    "chase",
+    "8192",
+    "128",
+    "random",
+    ".12",
+    "6321"
+  ],
+  "started_utc": "2026-10-23T20:53:51.124506+00:00",
+  "elapsed_wall_s": 0.1224161246791482,
+  "returncode": 0,
+  "stdout": "{\"mode\":\"chase\",\"bytes\":8192,\"spacing\":128,\"nodes\":64,\"pattern\":\"random\",\"seed\":6321,\"elapsed_ns\":120018334,\"thread_cpu_ns\":119799000,\"loads\":703856640,\"latency_ns\":0.170515311,\"cycles\":473313462,\"instructions\":727379368,\"cycles_available\":1,\"pcycles_available\":1,\"pcycles\":473313462,\"cycles_per_load\":0.672457195,\"native_page_bytes\":16384,\"active_line_bytes\":8192,\"correctness\":true,\"pid\":759}\n",
+  "stderr": ""
+}

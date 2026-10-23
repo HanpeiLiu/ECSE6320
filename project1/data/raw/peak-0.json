@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/build/peak",
+    "50000000",
+    "0.5",
+    "0.0002"
+  ],
+  "started_utc": "2026-10-23T20:53:46.334815+00:00",
+  "elapsed_wall_s": 0.21768179163336754,
+  "returncode": 0,
+  "stdout": "{\"iterations\":50000000,\"elapsed_ns\":52656459,\"thread_cpu_ns\":52639459,\"flops\":6400000000,\"gflops\":121.542544,\"cycles\":200380642,\"instructions\":900129999,\"cycles_available\":1,\"estimated_flops_per_cycle\":31.939213,\"pcycles\":200380642}\n",
+  "stderr": ""
+}

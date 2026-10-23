@@ -1,0 +1,12 @@
+/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/negative_dot.c:11:5: remark: loop not vectorized [-Rpass-missed=loop-vectorize]
+   11 |     for(size_t i=0;i<n;i++)sum=sum+x[i]*y[i];
+      |     ^
+/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/negative_dot.c:19:5: remark: loop not vectorized [-Rpass-missed=loop-vectorize]
+   19 |     for(size_t i=0;i<n;i++){x[i]=(float)((int)(i%17)-8)/16;y[i]=(float)((int)(i%13)-6)/16;}
+      |     ^
+/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/negative_dot.c:20:17: remark: loop not vectorized [-Rpass-missed=loop-vectorize]
+   20 |     float ref=0;for(size_t i=0;i<n;i++)ref=ref+x[i]*y[i];
+      |                 ^
+/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/negative_dot.c:25:44: remark: loop not vectorized [-Rpass-missed=loop-vectorize]
+   25 |     cpu_count a=cpu_snapshot();t=wall_ns();for(size_t j=0;j<reps;j++)sink=observable_dot(x,y,n);
+      |                                            ^

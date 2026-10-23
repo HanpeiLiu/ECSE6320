@@ -1,0 +1,42 @@
+{
+  "command": [
+    "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project2/build/memory",
+    "chase",
+    "131072",
+    "128",
+    "sequential",
+    "0.12",
+    "6320"
+  ],
+  "started_utc": "2026-10-23T20:23:53.275633+00:00",
+  "elapsed_wall_s": 0.12245704233646393,
+  "returncode": 0,
+  "stdout": "{\"mode\":\"chase\",\"bytes\":131072,\"spacing\":128,\"nodes\":1024,\"pattern\":\"sequential\",\"seed\":6320,\"elapsed_ns\":120200083,\"thread_cpu_ns\":119987000,\"loads\":118751232,\"latency_ns\":1.01220072,\"cycles\":478153136,\"instructions\":123740645,\"cycles_available\":1,\"pcycles_available\":1,\"pcycles\":478153136,\"cycles_per_load\":4.02651095,\"native_page_bytes\":16384,\"active_line_bytes\":131072,\"correctness\":true,\"pid\":97499}\n",
+  "stderr": "",
+  "measurement": {
+    "mode": "chase",
+    "bytes": 131072,
+    "spacing": 128,
+    "nodes": 1024,
+    "pattern": "sequential",
+    "seed": 6320,
+    "elapsed_ns": 120200083,
+    "thread_cpu_ns": 119987000,
+    "loads": 118751232,
+    "latency_ns": 1.01220072,
+    "cycles": 478153136,
+    "instructions": 123740645,
+    "cycles_available": 1,
+    "pcycles_available": 1,
+    "pcycles": 478153136,
+    "cycles_per_load": 4.02651095,
+    "native_page_bytes": 16384,
+    "active_line_bytes": 131072,
+    "correctness": true,
+    "pid": 97499,
+    "case_id": "chase-bytes131072-spacing128-patternsequential",
+    "trial": 0,
+    "suites": "baseline_workingset",
+    "started_utc": "2026-10-23T20:23:53.275633+00:00"
+  }
+}

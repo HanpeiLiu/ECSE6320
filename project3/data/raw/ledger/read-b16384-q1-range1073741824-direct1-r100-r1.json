@@ -1,0 +1,8 @@
+{
+  "case_id": "read-b16384-q1-range1073741824-direct1-r100",
+  "trial": 1,
+  "reserved_write_bytes": 0,
+  "started_utc": "2026-10-23T20:28:53.538482+00:00",
+  "actual_write_bytes": 0,
+  "completed_utc": "2026-10-23T20:28:54.952437+00:00"
+}

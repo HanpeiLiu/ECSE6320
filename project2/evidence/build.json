@@ -1,0 +1,19 @@
+{
+  "command": [
+    "clang",
+    "-O3",
+    "-mcpu=native",
+    "-ffp-contract=off",
+    "-g",
+    "-Wall",
+    "-Wextra",
+    "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project2/src/memory.c",
+    "-o",
+    "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project2/build/memory"
+  ],
+  "started_utc": "2026-10-23T20:23:48.498129+00:00",
+  "elapsed_wall_s": 0.3061707494780421,
+  "returncode": 0,
+  "stdout": "",
+  "stderr": ""
+}

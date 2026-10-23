@@ -1,0 +1,8 @@
+{
+  "case_id": "direct-crc32c-verify",
+  "trial": 0,
+  "reserved_write_bytes": 67108864,
+  "started_utc": "2026-10-23T20:27:47.113132+00:00",
+  "actual_write_bytes": 67108864,
+  "completed_utc": "2026-10-23T20:27:47.522041+00:00"
+}

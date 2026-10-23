@@ -1,0 +1,3 @@
+label,median_useful_GiB_s,std
+"Cache reuse, 64KiB load",9.11723219,0.6451411009570348
+"DRAM-scale, 256MiB load",7.88632943,0.6084990972795162

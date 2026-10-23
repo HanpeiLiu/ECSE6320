@@ -1,0 +1,8 @@
+{
+  "case_id": "parallel-randread-b4096-q8-jobs4",
+  "trial": 0,
+  "reserved_write_bytes": 0,
+  "started_utc": "2026-10-23T20:37:47.807135+00:00",
+  "actual_write_bytes": 0,
+  "completed_utc": "2026-10-23T20:37:50.222911+00:00"
+}

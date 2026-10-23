@@ -1,0 +1,85 @@
+{
+  "command": [
+    "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/tools/bin/fio",
+    "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project3/config/generated/randread-b262144-q1-range1073741824-direct1-r100-r0.fio",
+    "--output-format=json+",
+    "--output=/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project3/data/raw/runs/randread-b262144-q1-range1073741824-direct1-r100-r0.json"
+  ],
+  "started_utc": "2026-10-23T20:28:15.923190+00:00",
+  "elapsed_wall_s": 1.3342321254312992,
+  "returncode": 0,
+  "stdout": "",
+  "stderr": "",
+  "case": {
+    "id": "randread-b262144-q1-range1073741824-direct1-r100",
+    "runtime": "1s",
+    "io_bytes": 4294967296,
+    "rw": "randread",
+    "bs": 262144,
+    "qd": 1,
+    "suites": [
+      "block_pattern"
+    ]
+  },
+  "trial": 0,
+  "health_before": {
+    "smart_status": {
+      "passed": true,
+      "nvme": {
+        "value": 0
+      }
+    },
+    "temperature": {
+      "current": 30
+    },
+    "nvme_smart_health_information_log": {
+      "nsid": -1,
+      "critical_warning": 0,
+      "temperature": 30,
+      "available_spare": 100,
+      "available_spare_threshold": 99,
+      "percentage_used": 1,
+      "data_units_read": 80254552,
+      "data_units_written": 42150314,
+      "host_reads": 2678830522,
+      "host_writes": 1155368965,
+      "controller_busy_time": 0,
+      "power_cycles": 344,
+      "power_on_hours": 1473,
+      "unsafe_shutdowns": 25,
+      "media_errors": 0,
+      "num_err_log_entries": 0
+    }
+  },
+  "health_after": {
+    "smart_status": {
+      "passed": true,
+      "nvme": {
+        "value": 0
+      }
+    },
+    "temperature": {
+      "current": 31
+    },
+    "nvme_smart_health_information_log": {
+      "nsid": -1,
+      "critical_warning": 0,
+      "temperature": 31,
+      "available_spare": 100,
+      "available_spare_threshold": 99,
+      "percentage_used": 1,
+      "data_units_read": 80256447,
+      "data_units_written": 42150315,
+      "host_reads": 2678834749,
+      "host_writes": 1155368968,
+      "controller_busy_time": 0,
+      "power_cycles": 344,
+      "power_on_hours": 1473,
+      "unsafe_shutdowns": 25,
+      "media_errors": 0,
+      "num_err_log_entries": 0
+    }
+  },
+  "disposable_regular_file": "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project3/work/ssd-test.bin",
+  "prep": false
+}

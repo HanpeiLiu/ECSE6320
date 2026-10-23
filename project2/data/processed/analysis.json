@@ -1,0 +1,18 @@
+{
+  "rows": 355,
+  "cases": 71,
+  "all_correct": true,
+  "native_page_bytes": 16384,
+  "hugepage": {
+    "native_page_bytes": 16384,
+    "requested_superpage_bytes": 2097152,
+    "kern_return": 4,
+    "message": "(os/kern) invalid argument",
+    "allocation_succeeded": false
+  },
+  "traffic_knee_threads": 2,
+  "no_load_probe_ns": 104.563183,
+  "counter_runs": 42,
+  "minimum_counter_samples": 871,
+  "minimum_core_p_fraction": 0.960470984020185
+}

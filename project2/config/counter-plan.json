@@ -1,0 +1,186 @@
+{
+  "created_utc": "2026-10-23T20:40:53.900146+00:00",
+  "trials": 3,
+  "cases": [
+    {
+      "id": "cache-chase-65536",
+      "executable": "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project2/build/memory",
+      "args": [
+        "chase",
+        "65536",
+        "128",
+        "random",
+        "1.2",
+        "6320"
+      ],
+      "kernel": "chase_batch",
+      "suite": "cache",
+      "bytes": 65536,
+      "spacing": 128
+    },
+    {
+      "id": "cache-chase-4194304",
+      "executable": "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project2/build/memory",
+      "args": [
+        "chase",
+        "4194304",
+        "128",
+        "random",
+        "1.2",
+        "6320"
+      ],
+      "kernel": "chase_batch",
+      "suite": "cache",
+      "bytes": 4194304,
+      "spacing": 128
+    },
+    {
+      "id": "cache-chase-268435456",
+      "executable": "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project2/build/memory",
+      "args": [
+        "chase",
+        "268435456",
+        "128",
+        "random",
+        "1.2",
+        "6320"
+      ],
+      "kernel": "chase_batch",
+      "suite": "cache",
+      "bytes": 268435456,
+      "spacing": 128
+    },
+    {
+      "id": "tlb-nodes256-spacing128",
+      "executable": "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project2/build/memory",
+      "args": [
+        "chase",
+        "32768",
+        "128",
+        "random",
+        "1.2",
+        "6320"
+      ],
+      "kernel": "chase_batch",
+      "suite": "TLB",
+      "bytes": 32768,
+      "spacing": 128,
+      "nodes": 256
+    },
+    {
+      "id": "tlb-nodes256-spacing16384",
+      "executable": "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project2/build/memory",
+      "args": [
+        "chase",
+        "4194304",
+        "16384",
+        "random",
+        "1.2",
+        "6320"
+      ],
+      "kernel": "chase_batch",
+      "suite": "TLB",
+      "bytes": 4194304,
+      "spacing": 16384,
+      "nodes": 256
+    },
+    {
+      "id": "tlb-nodes4096-spacing128",
+      "executable": "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project2/build/memory",
+      "args": [
+        "chase",
+        "524288",
+        "128",
+        "random",
+        "1.2",
+        "6320"
+      ],
+      "kernel": "chase_batch",
+      "suite": "TLB",
+      "bytes": 524288,
+      "spacing": 128,
+      "nodes": 4096
+    },
+    {
+      "id": "tlb-nodes4096-spacing16384",
+      "executable": "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project2/build/memory",
+      "args": [
+        "chase",
+        "67108864",
+        "16384",
+        "random",
+        "1.2",
+        "6320"
+      ],
+      "kernel": "chase_batch",
+      "suite": "TLB",
+      "bytes": 67108864,
+      "spacing": 16384,
+      "nodes": 4096
+    },
+    {
+      "id": "tlb-nodes16384-spacing128",
+      "executable": "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project2/build/memory",
+      "args": [
+        "chase",
+        "2097152",
+        "128",
+        "random",
+        "1.2",
+        "6320"
+      ],
+      "kernel": "chase_batch",
+      "suite": "TLB",
+      "bytes": 2097152,
+      "spacing": 128,
+      "nodes": 16384
+    },
+    {
+      "id": "tlb-nodes16384-spacing16384",
+      "executable": "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project2/build/memory",
+      "args": [
+        "chase",
+        "268435456",
+        "16384",
+        "random",
+        "1.2",
+        "6320"
+      ],
+      "kernel": "chase_batch",
+      "suite": "TLB",
+      "bytes": 268435456,
+      "spacing": 16384,
+      "nodes": 16384
+    },
+    {
+      "id": "numeric-mul-n8192",
+      "executable": "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/build/native",
+      "args": [
+        "mul",
+        "f32",
+        "8192",
+        "1",
+        "0",
+        "1.2"
+      ],
+      "kernel": "mul_f32",
+      "suite": "numeric_cache",
+      "n": 8192
+    },
+    {
+      "id": "numeric-mul-n16777216",
+      "executable": "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/build/native",
+      "args": [
+        "mul",
+        "f32",
+        "16777216",
+        "1",
+        "0",
+        "1.2"
+      ],
+      "kernel": "mul_f32",
+      "suite": "numeric_cache",
+      "n": 16777216
+    }
+  ]
+}

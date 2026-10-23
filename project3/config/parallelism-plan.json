@@ -1,0 +1,63 @@
+{
+  "created_utc": "2026-10-23T20:37:42.958181+00:00",
+  "reason": "Single-process QD>=32 gave mean in-flight requests ~16. These read-only forked workers test beyond that host-engine limit.",
+  "trials": 3,
+  "cases": [
+    {
+      "id": "parallel-randread-b4096-q8-jobs2",
+      "rw": "randread",
+      "bs": 4096,
+      "qd": 8,
+      "numjobs": 2,
+      "size": 1073741824,
+      "io_bytes": 4294967296,
+      "runtime": "2s",
+      "suites": [
+        "parallelism"
+      ],
+      "partition_bytes": 536870912
+    },
+    {
+      "id": "parallel-randread-b4096-q8-jobs4",
+      "rw": "randread",
+      "bs": 4096,
+      "qd": 8,
+      "numjobs": 4,
+      "size": 1073741824,
+      "io_bytes": 4294967296,
+      "runtime": "2s",
+      "suites": [
+        "parallelism"
+      ],
+      "partition_bytes": 268435456
+    },
+    {
+      "id": "parallel-randread-b4096-q8-jobs8",
+      "rw": "randread",
+      "bs": 4096,
+      "qd": 8,
+      "numjobs": 8,
+      "size": 1073741824,
+      "io_bytes": 4294967296,
+      "runtime": "2s",
+      "suites": [
+        "parallelism"
+      ],
+      "partition_bytes": 134217728
+    },
+    {
+      "id": "parallel-randread-b4096-q8-jobs12",
+      "rw": "randread",
+      "bs": 4096,
+      "qd": 8,
+      "numjobs": 12,
+      "size": 1073741824,
+      "io_bytes": 4294967296,
+      "runtime": "2s",
+      "suites": [
+        "parallelism"
+      ],
+      "partition_bytes": 89477120
+    }
+  ]
+}

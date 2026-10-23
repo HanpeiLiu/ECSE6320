@@ -1,0 +1,17 @@
+{
+  "direction_rows": 147,
+  "measured_case_trials": 141,
+  "cases": 47,
+  "io_errors": 0,
+  "single_process_knee_qd": 8,
+  "maximum_observed_random_read_iops": 64952.047952,
+  "maximum_observed_sequential_mib_s": 3955.0449542999268,
+  "total_test_write_bytes": 57310568448,
+  "total_test_write_GiB": 53.37462615966797,
+  "minimum_tail_io_count": 123209,
+  "minimum_p999_tail_expected_samples": 123.209,
+  "temperature_min_C": 28.0,
+  "temperature_max_C": 39.0,
+  "largest_tail_p999_us": 7372.8,
+  "min_block_run_ms": 570.0
+}

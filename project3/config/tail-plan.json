@@ -1,0 +1,33 @@
+{
+  "selection_rule": "smallest tested QD reaching 90% of maximum median IOPS",
+  "near_knee_qd": 8,
+  "mid_qd": 4,
+  "cases": [
+    {
+      "id": "tail-mid-q4",
+      "rw": "randread",
+      "bs": 4096,
+      "qd": 4,
+      "io_bytes": 68719476736,
+      "runtime": "3s",
+      "suites": [
+        "tail_latency"
+      ],
+      "role": "mid",
+      "target_completions": 120000
+    },
+    {
+      "id": "tail-near_knee-q8",
+      "rw": "randread",
+      "bs": 4096,
+      "qd": 8,
+      "io_bytes": 68719476736,
+      "runtime": "3s",
+      "suites": [
+        "tail_latency"
+      ],
+      "role": "near_knee",
+      "target_completions": 120000
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "created_utc": "2026-10-23T21:03:43.551171+00:00",
+  "reason": "Ordinary strict dot uses SIMD products followed by ordered scalar additions; add volatile accumulator control to explicitly test a non-vectorized loop.",
+  "sizes": [
+    1024,
+    1048576
+  ],
+  "trials": 5,
+  "builds": [
+    "scalar",
+    "auto",
+    "native"
+  ]
+}

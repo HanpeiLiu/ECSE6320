@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/build/negative-auto",
+    "1048576"
+  ],
+  "started_utc": "2026-10-23T21:03:43.751641+00:00",
+  "elapsed_wall_s": 0.14498412515968084,
+  "returncode": 0,
+  "stdout": "{\"build\":\"auto\",\"n\":1048576,\"iterations\":10,\"elapsed_ns\":28902209,\"ns_per_element\":2.75632944,\"cycles_per_element\":10.4603039,\"cycles\":109684236,\"correctness\":true,\"reference\":-0.32421875,\"result\":-0.32421875}\n",
+  "stderr": ""
+}

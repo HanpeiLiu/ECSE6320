@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+tools/src/
+tools/bin/
+tools/logs/
+.matplotlib-cache/
+project1/build/
+project2/build/
+project3/build/
+project3/work/
+local-*.state
+submission/

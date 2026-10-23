@@ -1,0 +1,26 @@
+[global]
+filename=/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project3/work/ssd-test.bin
+size=67108864
+ioengine=posixaio
+direct=1
+invalidate=0
+allow_file_create=0
+thread=1
+numjobs=1
+iodepth=1
+mem_align=16384
+randrepeat=1
+randseed=6320
+refill_buffers=1
+buffer_compress_percentage=0
+clat_percentiles=1
+lat_percentiles=1
+percentile_list=50:95:99:99.9
+group_reporting=1
+clocksource=clock_gettime
+rw=randread
+bs=4096
+io_size=4294967296
+runtime=1s
+
+[randread-b4096-q1-range67108864-direct1-r100]

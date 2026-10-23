@@ -1,0 +1,14 @@
+{
+  "scalar": {
+    "vector_arithmetic_in_control": false,
+    "excerpt": "\n1000004f8: d10043ff    \tsub\tsp, sp, #0x10\n1000004fc: b9000fff    \tstr\twzr, [sp, #0xc]\n100000500: b4000122    \tcbz\tx2, 0x100000524 <_observable_dot+0x2c>\n100000504: bd400fe0    \tldr\ts0, [sp, #0xc]\n100000508: bc404401    \tldr\ts1, [x0], #0x4\n10000050c: bc404422    \tldr\ts2, [x1], #0x4\n100000510: 1e220821    \tfmul\ts1, s1, s2\n100000514: 1e212800    \tfadd\ts0, s0, s1\n100000518: bd000fe0    \tstr\ts0, [sp, #0xc]\n10000051c: f1000442    \tsubs\tx2, x2, #0x1\n100000520: 54ffff21    \tb.ne\t0x100000504 <_observable_dot+0xc>\n100000524: bd400fe0    \tldr\ts0, [sp, #0xc]\n100000528: 910043ff    \tadd\tsp, sp, #0x10\n10000052c: d65f03c0    \tret"
+  },
+  "auto": {
+    "vector_arithmetic_in_control": false,
+    "excerpt": "\n100000548: d10043ff    \tsub\tsp, sp, #0x10\n10000054c: b9000fff    \tstr\twzr, [sp, #0xc]\n100000550: b4000122    \tcbz\tx2, 0x100000574 <_observable_dot+0x2c>\n100000554: bd400fe0    \tldr\ts0, [sp, #0xc]\n100000558: bc404401    \tldr\ts1, [x0], #0x4\n10000055c: bc404422    \tldr\ts2, [x1], #0x4\n100000560: 1e220821    \tfmul\ts1, s1, s2\n100000564: 1e212800    \tfadd\ts0, s0, s1\n100000568: bd000fe0    \tstr\ts0, [sp, #0xc]\n10000056c: f1000442    \tsubs\tx2, x2, #0x1\n100000570: 54ffff21    \tb.ne\t0x100000554 <_observable_dot+0xc>\n100000574: bd400fe0    \tldr\ts0, [sp, #0xc]\n100000578: 910043ff    \tadd\tsp, sp, #0x10\n10000057c: d65f03c0    \tret"
+  },
+  "native": {
+    "vector_arithmetic_in_control": false,
+    "excerpt": "\n100000548: d10043ff    \tsub\tsp, sp, #0x10\n10000054c: b9000fff    \tstr\twzr, [sp, #0xc]\n100000550: b4000122    \tcbz\tx2, 0x100000574 <_observable_dot+0x2c>\n100000554: bd400fe0    \tldr\ts0, [sp, #0xc]\n100000558: bc404401    \tldr\ts1, [x0], #0x4\n10000055c: bc404422    \tldr\ts2, [x1], #0x4\n100000560: 1e220821    \tfmul\ts1, s1, s2\n100000564: 1e212800    \tfadd\ts0, s0, s1\n100000568: bd000fe0    \tstr\ts0, [sp, #0xc]\n10000056c: f1000442    \tsubs\tx2, x2, #0x1\n100000570: 54ffff21    \tb.ne\t0x100000554 <_observable_dot+0xc>\n100000574: bd400fe0    \tldr\ts0, [sp, #0xc]\n100000578: 910043ff    \tadd\tsp, sp, #0x10\n10000057c: d65f03c0    \tret"
+  }
+}

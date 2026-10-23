@@ -1,0 +1,8 @@
+{
+  "case_id": "randrw-b4096-q16-range1073741824-direct1-r70",
+  "trial": 1,
+  "reserved_write_bytes": 2147483648,
+  "started_utc": "2026-10-23T20:28:56.922430+00:00",
+  "actual_write_bytes": 53407744,
+  "completed_utc": "2026-10-23T20:28:58.344282+00:00"
+}

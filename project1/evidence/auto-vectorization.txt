@@ -1,0 +1,18 @@
+/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:19:1: remark: vectorized loop (vectorization width: 4, interleaved count: 4) [-Rpass=loop-vectorize]
+   19 | DEFINE(float,f32)
+      | ^
+/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:19:1: remark: vectorized loop (vectorization width: 4, interleaved count: 4) [-Rpass=loop-vectorize]
+/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:19:1: remark: vectorized loop (vectorization width: 4, interleaved count: 4) [-Rpass=loop-vectorize]
+/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:19:1: remark: vectorized loop (vectorization width: 4, interleaved count: 4) [-Rpass=loop-vectorize]
+/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:19:1: remark: vectorized loop (vectorization width: 4, interleaved count: 4) [-Rpass=loop-vectorize]
+/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:19:1: remark: vectorized loop (vectorization width: 4, interleaved count: 4) [-Rpass=loop-vectorize]
+/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:19:1: remark: vectorized loop (vectorization width: 4, interleaved count: 4) [-Rpass=loop-vectorize]
+/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:20:1: remark: vectorized loop (vectorization width: 2, interleaved count: 4) [-Rpass=loop-vectorize]
+   20 | DEFINE(double,f64)
+      | ^
+/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:20:1: remark: vectorized loop (vectorization width: 2, interleaved count: 4) [-Rpass=loop-vectorize]
+/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:20:1: remark: vectorized loop (vectorization width: 2, interleaved count: 4) [-Rpass=loop-vectorize]
+/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:20:1: remark: vectorized loop (vectorization width: 2, interleaved count: 4) [-Rpass=loop-vectorize]
+/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:20:1: remark: vectorized loop (vectorization width: 2, interleaved count: 4) [-Rpass=loop-vectorize]
+/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:20:1: remark: vectorized loop (vectorization width: 2, interleaved count: 4) [-Rpass=loop-vectorize]
+/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:20:1: remark: vectorized loop (vectorization width: 2, interleaved count: 4) [-Rpass=loop-vectorize]

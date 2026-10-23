@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/build/negative-native",
+    "1024"
+  ],
+  "started_utc": "2026-10-23T21:03:44.205362+00:00",
+  "elapsed_wall_s": 0.02942983340471983,
+  "returncode": 0,
+  "stdout": "{\"build\":\"native\",\"n\":1024,\"iterations\":10322,\"elapsed_ns\":27266208,\"ns_per_element\":2.57965087,\"cycles_per_element\":10.1696998,\"cycles\":107490961,\"correctness\":true,\"reference\":-0.1796875,\"result\":-0.1796875}\n",
+  "stderr": ""
+}

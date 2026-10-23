@@ -1,0 +1,106 @@
+{
+  "status": "success",
+  "case": {
+    "id": "tlb-balanced-nodes4096",
+    "executable": "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project2/build/memory-u64",
+    "args": [
+      "chase",
+      "67108864",
+      "16384",
+      "balanced",
+      "1.2",
+      "6320"
+    ],
+    "kernel": "chase_batch",
+    "suite": "TLB-balanced",
+    "bytes": 67108864,
+    "spacing": 16384,
+    "nodes": 4096
+  },
+  "trial": 0,
+  "record": {
+    "command": [
+      "xctrace",
+      "record",
+      "--template",
+      "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project2/evidence/ECSE6320-Counters.tracetemplate",
+      "--time-limit",
+      "20s",
+      "--output",
+      "/private/tmp/ecse6320-pmu-51ua46q6/recording.trace",
+      "--target-stdout",
+      "/private/tmp/ecse6320-pmu-51ua46q6/target.stdout",
+      "--launch",
+      "--",
+      "/private/tmp/ecse6320-pmu-51ua46q6/kernel",
+      "chase",
+      "67108864",
+      "16384",
+      "balanced",
+      "1.2",
+      "6320"
+    ],
+    "started_utc": "2026-10-23T20:54:04.861101+00:00",
+    "elapsed_wall_s": 5.11841466743499,
+    "returncode": 0,
+    "stdout": "Starting recording with the ECSE6320-Counters template. Launching process: kernel. Time limit: 20.0 s\nCtrl-C to stop the recording\nTarget app exited, ending recording...\nRecording completed. Saving output file...\nOutput file saved as: recording.trace\n",
+    "stderr": ""
+  },
+  "exports": [
+    {
+      "command": [
+        "xctrace",
+        "export",
+        "--input",
+        "/private/tmp/ecse6320-pmu-51ua46q6/recording.trace",
+        "--toc",
+        "--output",
+        "/private/tmp/ecse6320-pmu-51ua46q6/toc.xml"
+      ],
+      "started_utc": "2026-10-23T20:54:09.979571+00:00",
+      "elapsed_wall_s": 2.211914583109319,
+      "returncode": 0,
+      "stdout": "Finished export to the file: /private/tmp/ecse6320-pmu-51ua46q6/toc.xml\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "xctrace",
+        "export",
+        "--input",
+        "/private/tmp/ecse6320-pmu-51ua46q6/recording.trace",
+        "--xpath",
+        "/trace-toc/run[@number=\"1\"]/data/table[@schema=\"counters-profile\"]",
+        "--output",
+        "/private/tmp/ecse6320-pmu-51ua46q6/counters.xml"
+      ],
+      "started_utc": "2026-10-23T20:54:12.191526+00:00",
+      "elapsed_wall_s": 2.1538106249645352,
+      "returncode": 0,
+      "stdout": "Finished export to the file: /private/tmp/ecse6320-pmu-51ua46q6/counters.xml\n",
+      "stderr": ""
+    }
+  ],
+  "events": [
+    "L1D_CACHE_MISS_LD_NONSPEC",
+    "L1D_TLB_MISS_NONSPEC",
+    "L2_TLB_MISS_DATA",
+    "Cycles",
+    "Instructions",
+    "INST_SIMD_ALU"
+  ],
+  "sample_count": 1200,
+  "sample_weight_ns": 1200000000,
+  "event_sums": {
+    "L1D_CACHE_MISS_LD_NONSPEC": 64849325,
+    "L1D_TLB_MISS_NONSPEC": 76449104,
+    "L2_TLB_MISS_DATA": 77391891,
+    "Cycles": 4698603294,
+    "Instructions": 104689511,
+    "INST_SIMD_ALU": 31
+  },
+  "p_core_sample_fraction": 1.0,
+  "attribution": "Sampled deltas attributed to leaf kernel; includes warm-up calls to that kernel, excludes allocation/initialization/driver samples. Not whole-process perf-stat totals.",
+  "executable_sha256": "828d6ebaaeb251978b0b227ea0939adefee32eb351b24b980d7a1e3a382f3d2c",
+  "template_sha256": "0539c843511727c1cb8e7175ce57273733bdad0ddf113c7dd135c2ec658092a9"
+}

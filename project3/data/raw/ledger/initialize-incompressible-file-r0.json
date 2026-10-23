@@ -1,0 +1,8 @@
+{
+  "case_id": "initialize-incompressible-file",
+  "trial": 0,
+  "reserved_write_bytes": 1073741824,
+  "started_utc": "2026-10-23T20:27:47.522279+00:00",
+  "actual_write_bytes": 1073741824,
+  "completed_utc": "2026-10-23T20:27:48.443245+00:00"
+}

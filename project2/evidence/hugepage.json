@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project2/build/memory",
+    "hugepage"
+  ],
+  "started_utc": "2026-10-23T20:23:48.924130+00:00",
+  "elapsed_wall_s": 0.001875375397503376,
+  "returncode": 0,
+  "stdout": "{\"native_page_bytes\":16384,\"requested_superpage_bytes\":2097152,\"kern_return\":4,\"message\":\"(os/kern) invalid argument\",\"allocation_succeeded\":false}\n",
+  "stderr": ""
+}

@@ -1,0 +1,59 @@
+{
+  "created_utc": "2026-10-23T20:53:52.231650+00:00",
+  "reason": "Offset-zero page-spread case can alias L1 cache sets. Balance page offsets across 128 line positions; retain original data. Also compare 63/64-load unroll for tiny cycles.",
+  "cases": [
+    {
+      "id": "tlb-balanced-nodes256",
+      "executable": "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project2/build/memory-u64",
+      "args": [
+        "chase",
+        "4194304",
+        "16384",
+        "balanced",
+        "1.2",
+        "6320"
+      ],
+      "kernel": "chase_batch",
+      "suite": "TLB-balanced",
+      "bytes": 4194304,
+      "spacing": 16384,
+      "nodes": 256
+    },
+    {
+      "id": "tlb-balanced-nodes4096",
+      "executable": "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project2/build/memory-u64",
+      "args": [
+        "chase",
+        "67108864",
+        "16384",
+        "balanced",
+        "1.2",
+        "6320"
+      ],
+      "kernel": "chase_batch",
+      "suite": "TLB-balanced",
+      "bytes": 67108864,
+      "spacing": 16384,
+      "nodes": 4096
+    },
+    {
+      "id": "tlb-balanced-nodes16384",
+      "executable": "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project2/build/memory-u64",
+      "args": [
+        "chase",
+        "268435456",
+        "16384",
+        "balanced",
+        "1.2",
+        "6320"
+      ],
+      "kernel": "chase_batch",
+      "suite": "TLB-balanced",
+      "bytes": 268435456,
+      "spacing": 16384,
+      "nodes": 16384
+    }
+  ],
+  "plain_trials": 5,
+  "counter_trials": 3
+}

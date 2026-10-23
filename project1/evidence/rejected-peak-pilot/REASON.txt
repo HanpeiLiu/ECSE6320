@@ -1,0 +1,1 @@
+Disassembly showed only 9 FMA instructions rather than the assumed 16 in the first microbenchmark. Some constant accumulator updates rounded to no change and were optimized away. Its claimed FLOP count was rejected. New runtime operands require revalidation of the generated loop before any roofline result is reported. These pilot results must not be used as the compute ceiling.

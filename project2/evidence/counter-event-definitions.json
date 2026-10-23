@@ -1,0 +1,21 @@
+{
+  "L1D_CACHE_MISS_LD_NONSPEC": {
+    "counters_mask": 224,
+    "number": 191,
+    "description": "Retired loads that missed in the L1 Data Cache"
+  },
+  "L1D_TLB_MISS_NONSPEC": {
+    "counters_mask": 224,
+    "number": 193,
+    "description": "Retired loads and stores that missed in the L1 Data TLB"
+  },
+  "L2_TLB_MISS_DATA": {
+    "number": 1035,
+    "description": "Loads and stores that missed in the L2 TLB"
+  },
+  "INST_SIMD_ALU": {
+    "counters_mask": 128,
+    "number": 154,
+    "description": "Retired non-load/store Advanced SIMD and FP Unit instructions"
+  }
+}

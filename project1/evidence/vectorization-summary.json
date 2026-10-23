@@ -1,0 +1,26 @@
+[
+  {
+    "build": "scalar",
+    "vectorized_remarks": 0,
+    "nonvectorized_remarks": 14,
+    "vector_f32_instructions": false,
+    "vector_f64_instructions": false,
+    "fma_present": false
+  },
+  {
+    "build": "auto",
+    "vectorized_remarks": 14,
+    "nonvectorized_remarks": 0,
+    "vector_f32_instructions": true,
+    "vector_f64_instructions": true,
+    "fma_present": false
+  },
+  {
+    "build": "native",
+    "vectorized_remarks": 14,
+    "nonvectorized_remarks": 0,
+    "vector_f32_instructions": true,
+    "vector_f64_instructions": true,
+    "fma_present": false
+  }
+]

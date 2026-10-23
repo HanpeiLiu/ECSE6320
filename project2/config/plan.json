@@ -1,0 +1,811 @@
+{
+  "created_utc": "2026-10-23T20:23:48.926358+00:00",
+  "trials": 5,
+  "target_seconds": 0.12,
+  "seed": 6320,
+  "cases": [
+    {
+      "id": "chase-bytes16384-spacing128-patternsequential",
+      "mode": "chase",
+      "bytes": 16384,
+      "spacing": 128,
+      "pattern": "sequential",
+      "suites": [
+        "baseline_workingset"
+      ]
+    },
+    {
+      "id": "chase-bytes16384-spacing128-patternrandom",
+      "mode": "chase",
+      "bytes": 16384,
+      "spacing": 128,
+      "pattern": "random",
+      "suites": [
+        "baseline_workingset"
+      ]
+    },
+    {
+      "id": "chase-bytes65536-spacing128-patternsequential",
+      "mode": "chase",
+      "bytes": 65536,
+      "spacing": 128,
+      "pattern": "sequential",
+      "suites": [
+        "baseline_workingset"
+      ]
+    },
+    {
+      "id": "chase-bytes65536-spacing128-patternrandom",
+      "mode": "chase",
+      "bytes": 65536,
+      "spacing": 128,
+      "pattern": "random",
+      "suites": [
+        "baseline_workingset"
+      ]
+    },
+    {
+      "id": "chase-bytes131072-spacing128-patternsequential",
+      "mode": "chase",
+      "bytes": 131072,
+      "spacing": 128,
+      "pattern": "sequential",
+      "suites": [
+        "baseline_workingset"
+      ]
+    },
+    {
+      "id": "chase-bytes131072-spacing128-patternrandom",
+      "mode": "chase",
+      "bytes": 131072,
+      "spacing": 128,
+      "pattern": "random",
+      "suites": [
+        "baseline_workingset",
+        "page_locality"
+      ]
+    },
+    {
+      "id": "chase-bytes262144-spacing128-patternsequential",
+      "mode": "chase",
+      "bytes": 262144,
+      "spacing": 128,
+      "pattern": "sequential",
+      "suites": [
+        "baseline_workingset"
+      ]
+    },
+    {
+      "id": "chase-bytes262144-spacing128-patternrandom",
+      "mode": "chase",
+      "bytes": 262144,
+      "spacing": 128,
+      "pattern": "random",
+      "suites": [
+        "baseline_workingset"
+      ]
+    },
+    {
+      "id": "chase-bytes1048576-spacing128-patternsequential",
+      "mode": "chase",
+      "bytes": 1048576,
+      "spacing": 128,
+      "pattern": "sequential",
+      "suites": [
+        "baseline_workingset"
+      ]
+    },
+    {
+      "id": "chase-bytes1048576-spacing128-patternrandom",
+      "mode": "chase",
+      "bytes": 1048576,
+      "spacing": 128,
+      "pattern": "random",
+      "suites": [
+        "baseline_workingset"
+      ]
+    },
+    {
+      "id": "chase-bytes4194304-spacing128-patternsequential",
+      "mode": "chase",
+      "bytes": 4194304,
+      "spacing": 128,
+      "pattern": "sequential",
+      "suites": [
+        "baseline_workingset"
+      ]
+    },
+    {
+      "id": "chase-bytes4194304-spacing128-patternrandom",
+      "mode": "chase",
+      "bytes": 4194304,
+      "spacing": 128,
+      "pattern": "random",
+      "suites": [
+        "baseline_workingset"
+      ]
+    },
+    {
+      "id": "chase-bytes16777216-spacing128-patternsequential",
+      "mode": "chase",
+      "bytes": 16777216,
+      "spacing": 128,
+      "pattern": "sequential",
+      "suites": [
+        "baseline_workingset"
+      ]
+    },
+    {
+      "id": "chase-bytes16777216-spacing128-patternrandom",
+      "mode": "chase",
+      "bytes": 16777216,
+      "spacing": 128,
+      "pattern": "random",
+      "suites": [
+        "baseline_workingset"
+      ]
+    },
+    {
+      "id": "chase-bytes33554432-spacing128-patternsequential",
+      "mode": "chase",
+      "bytes": 33554432,
+      "spacing": 128,
+      "pattern": "sequential",
+      "suites": [
+        "baseline_workingset"
+      ]
+    },
+    {
+      "id": "chase-bytes33554432-spacing128-patternrandom",
+      "mode": "chase",
+      "bytes": 33554432,
+      "spacing": 128,
+      "pattern": "random",
+      "suites": [
+        "baseline_workingset"
+      ]
+    },
+    {
+      "id": "chase-bytes67108864-spacing128-patternsequential",
+      "mode": "chase",
+      "bytes": 67108864,
+      "spacing": 128,
+      "pattern": "sequential",
+      "suites": [
+        "baseline_workingset"
+      ]
+    },
+    {
+      "id": "chase-bytes67108864-spacing128-patternrandom",
+      "mode": "chase",
+      "bytes": 67108864,
+      "spacing": 128,
+      "pattern": "random",
+      "suites": [
+        "baseline_workingset",
+        "intensity_zero"
+      ]
+    },
+    {
+      "id": "chase-bytes268435456-spacing128-patternsequential",
+      "mode": "chase",
+      "bytes": 268435456,
+      "spacing": 128,
+      "pattern": "sequential",
+      "suites": [
+        "baseline_workingset"
+      ]
+    },
+    {
+      "id": "chase-bytes268435456-spacing128-patternrandom",
+      "mode": "chase",
+      "bytes": 268435456,
+      "spacing": 128,
+      "pattern": "random",
+      "suites": [
+        "baseline_workingset"
+      ]
+    },
+    {
+      "id": "chase-bytes65536-spacing64-patternsequential",
+      "mode": "chase",
+      "bytes": 65536,
+      "spacing": 64,
+      "pattern": "sequential",
+      "suites": [
+        "granularity"
+      ]
+    },
+    {
+      "id": "chase-bytes65536-spacing64-patternrandom",
+      "mode": "chase",
+      "bytes": 65536,
+      "spacing": 64,
+      "pattern": "random",
+      "suites": [
+        "granularity"
+      ]
+    },
+    {
+      "id": "chase-bytes65536-spacing256-patternsequential",
+      "mode": "chase",
+      "bytes": 65536,
+      "spacing": 256,
+      "pattern": "sequential",
+      "suites": [
+        "granularity"
+      ]
+    },
+    {
+      "id": "chase-bytes65536-spacing256-patternrandom",
+      "mode": "chase",
+      "bytes": 65536,
+      "spacing": 256,
+      "pattern": "random",
+      "suites": [
+        "granularity"
+      ]
+    },
+    {
+      "id": "chase-bytes65536-spacing1024-patternsequential",
+      "mode": "chase",
+      "bytes": 65536,
+      "spacing": 1024,
+      "pattern": "sequential",
+      "suites": [
+        "granularity"
+      ]
+    },
+    {
+      "id": "chase-bytes65536-spacing1024-patternrandom",
+      "mode": "chase",
+      "bytes": 65536,
+      "spacing": 1024,
+      "pattern": "random",
+      "suites": [
+        "granularity"
+      ]
+    },
+    {
+      "id": "chase-bytes268435456-spacing64-patternsequential",
+      "mode": "chase",
+      "bytes": 268435456,
+      "spacing": 64,
+      "pattern": "sequential",
+      "suites": [
+        "granularity"
+      ]
+    },
+    {
+      "id": "chase-bytes268435456-spacing64-patternrandom",
+      "mode": "chase",
+      "bytes": 268435456,
+      "spacing": 64,
+      "pattern": "random",
+      "suites": [
+        "granularity"
+      ]
+    },
+    {
+      "id": "chase-bytes268435456-spacing256-patternsequential",
+      "mode": "chase",
+      "bytes": 268435456,
+      "spacing": 256,
+      "pattern": "sequential",
+      "suites": [
+        "granularity"
+      ]
+    },
+    {
+      "id": "chase-bytes268435456-spacing256-patternrandom",
+      "mode": "chase",
+      "bytes": 268435456,
+      "spacing": 256,
+      "pattern": "random",
+      "suites": [
+        "granularity"
+      ]
+    },
+    {
+      "id": "chase-bytes268435456-spacing1024-patternsequential",
+      "mode": "chase",
+      "bytes": 268435456,
+      "spacing": 1024,
+      "pattern": "sequential",
+      "suites": [
+        "granularity"
+      ]
+    },
+    {
+      "id": "chase-bytes268435456-spacing1024-patternrandom",
+      "mode": "chase",
+      "bytes": 268435456,
+      "spacing": 1024,
+      "pattern": "random",
+      "suites": [
+        "granularity"
+      ]
+    },
+    {
+      "id": "traffic-bytes268435456-spacing64-patternsequential-readpct0-threads1-probe_bytes67108864",
+      "mode": "traffic",
+      "bytes": 268435456,
+      "spacing": 64,
+      "pattern": "sequential",
+      "readpct": 0,
+      "threads": 1,
+      "probe_bytes": 67108864,
+      "suites": [
+        "pattern_granularity_rw"
+      ]
+    },
+    {
+      "id": "traffic-bytes268435456-spacing64-patternsequential-readpct50-threads1-probe_bytes67108864",
+      "mode": "traffic",
+      "bytes": 268435456,
+      "spacing": 64,
+      "pattern": "sequential",
+      "readpct": 50,
+      "threads": 1,
+      "probe_bytes": 67108864,
+      "suites": [
+        "pattern_granularity_rw"
+      ]
+    },
+    {
+      "id": "traffic-bytes268435456-spacing64-patternsequential-readpct70-threads1-probe_bytes67108864",
+      "mode": "traffic",
+      "bytes": 268435456,
+      "spacing": 64,
+      "pattern": "sequential",
+      "readpct": 70,
+      "threads": 1,
+      "probe_bytes": 67108864,
+      "suites": [
+        "pattern_granularity_rw"
+      ]
+    },
+    {
+      "id": "traffic-bytes268435456-spacing64-patternsequential-readpct100-threads1-probe_bytes67108864",
+      "mode": "traffic",
+      "bytes": 268435456,
+      "spacing": 64,
+      "pattern": "sequential",
+      "readpct": 100,
+      "threads": 1,
+      "probe_bytes": 67108864,
+      "suites": [
+        "pattern_granularity_rw",
+        "intensity"
+      ]
+    },
+    {
+      "id": "traffic-bytes268435456-spacing64-patternrandom-readpct0-threads1-probe_bytes67108864",
+      "mode": "traffic",
+      "bytes": 268435456,
+      "spacing": 64,
+      "pattern": "random",
+      "readpct": 0,
+      "threads": 1,
+      "probe_bytes": 67108864,
+      "suites": [
+        "pattern_granularity_rw"
+      ]
+    },
+    {
+      "id": "traffic-bytes268435456-spacing64-patternrandom-readpct50-threads1-probe_bytes67108864",
+      "mode": "traffic",
+      "bytes": 268435456,
+      "spacing": 64,
+      "pattern": "random",
+      "readpct": 50,
+      "threads": 1,
+      "probe_bytes": 67108864,
+      "suites": [
+        "pattern_granularity_rw"
+      ]
+    },
+    {
+      "id": "traffic-bytes268435456-spacing64-patternrandom-readpct70-threads1-probe_bytes67108864",
+      "mode": "traffic",
+      "bytes": 268435456,
+      "spacing": 64,
+      "pattern": "random",
+      "readpct": 70,
+      "threads": 1,
+      "probe_bytes": 67108864,
+      "suites": [
+        "pattern_granularity_rw"
+      ]
+    },
+    {
+      "id": "traffic-bytes268435456-spacing64-patternrandom-readpct100-threads1-probe_bytes67108864",
+      "mode": "traffic",
+      "bytes": 268435456,
+      "spacing": 64,
+      "pattern": "random",
+      "readpct": 100,
+      "threads": 1,
+      "probe_bytes": 67108864,
+      "suites": [
+        "pattern_granularity_rw"
+      ]
+    },
+    {
+      "id": "traffic-bytes268435456-spacing256-patternsequential-readpct0-threads1-probe_bytes67108864",
+      "mode": "traffic",
+      "bytes": 268435456,
+      "spacing": 256,
+      "pattern": "sequential",
+      "readpct": 0,
+      "threads": 1,
+      "probe_bytes": 67108864,
+      "suites": [
+        "pattern_granularity_rw"
+      ]
+    },
+    {
+      "id": "traffic-bytes268435456-spacing256-patternsequential-readpct50-threads1-probe_bytes67108864",
+      "mode": "traffic",
+      "bytes": 268435456,
+      "spacing": 256,
+      "pattern": "sequential",
+      "readpct": 50,
+      "threads": 1,
+      "probe_bytes": 67108864,
+      "suites": [
+        "pattern_granularity_rw"
+      ]
+    },
+    {
+      "id": "traffic-bytes268435456-spacing256-patternsequential-readpct70-threads1-probe_bytes67108864",
+      "mode": "traffic",
+      "bytes": 268435456,
+      "spacing": 256,
+      "pattern": "sequential",
+      "readpct": 70,
+      "threads": 1,
+      "probe_bytes": 67108864,
+      "suites": [
+        "pattern_granularity_rw"
+      ]
+    },
+    {
+      "id": "traffic-bytes268435456-spacing256-patternsequential-readpct100-threads1-probe_bytes67108864",
+      "mode": "traffic",
+      "bytes": 268435456,
+      "spacing": 256,
+      "pattern": "sequential",
+      "readpct": 100,
+      "threads": 1,
+      "probe_bytes": 67108864,
+      "suites": [
+        "pattern_granularity_rw"
+      ]
+    },
+    {
+      "id": "traffic-bytes268435456-spacing256-patternrandom-readpct0-threads1-probe_bytes67108864",
+      "mode": "traffic",
+      "bytes": 268435456,
+      "spacing": 256,
+      "pattern": "random",
+      "readpct": 0,
+      "threads": 1,
+      "probe_bytes": 67108864,
+      "suites": [
+        "pattern_granularity_rw"
+      ]
+    },
+    {
+      "id": "traffic-bytes268435456-spacing256-patternrandom-readpct50-threads1-probe_bytes67108864",
+      "mode": "traffic",
+      "bytes": 268435456,
+      "spacing": 256,
+      "pattern": "random",
+      "readpct": 50,
+      "threads": 1,
+      "probe_bytes": 67108864,
+      "suites": [
+        "pattern_granularity_rw"
+      ]
+    },
+    {
+      "id": "traffic-bytes268435456-spacing256-patternrandom-readpct70-threads1-probe_bytes67108864",
+      "mode": "traffic",
+      "bytes": 268435456,
+      "spacing": 256,
+      "pattern": "random",
+      "readpct": 70,
+      "threads": 1,
+      "probe_bytes": 67108864,
+      "suites": [
+        "pattern_granularity_rw"
+      ]
+    },
+    {
+      "id": "traffic-bytes268435456-spacing256-patternrandom-readpct100-threads1-probe_bytes67108864",
+      "mode": "traffic",
+      "bytes": 268435456,
+      "spacing": 256,
+      "pattern": "random",
+      "readpct": 100,
+      "threads": 1,
+      "probe_bytes": 67108864,
+      "suites": [
+        "pattern_granularity_rw"
+      ]
+    },
+    {
+      "id": "traffic-bytes268435456-spacing1024-patternsequential-readpct0-threads1-probe_bytes67108864",
+      "mode": "traffic",
+      "bytes": 268435456,
+      "spacing": 1024,
+      "pattern": "sequential",
+      "readpct": 0,
+      "threads": 1,
+      "probe_bytes": 67108864,
+      "suites": [
+        "pattern_granularity_rw"
+      ]
+    },
+    {
+      "id": "traffic-bytes268435456-spacing1024-patternsequential-readpct50-threads1-probe_bytes67108864",
+      "mode": "traffic",
+      "bytes": 268435456,
+      "spacing": 1024,
+      "pattern": "sequential",
+      "readpct": 50,
+      "threads": 1,
+      "probe_bytes": 67108864,
+      "suites": [
+        "pattern_granularity_rw"
+      ]
+    },
+    {
+      "id": "traffic-bytes268435456-spacing1024-patternsequential-readpct70-threads1-probe_bytes67108864",
+      "mode": "traffic",
+      "bytes": 268435456,
+      "spacing": 1024,
+      "pattern": "sequential",
+      "readpct": 70,
+      "threads": 1,
+      "probe_bytes": 67108864,
+      "suites": [
+        "pattern_granularity_rw"
+      ]
+    },
+    {
+      "id": "traffic-bytes268435456-spacing1024-patternsequential-readpct100-threads1-probe_bytes67108864",
+      "mode": "traffic",
+      "bytes": 268435456,
+      "spacing": 1024,
+      "pattern": "sequential",
+      "readpct": 100,
+      "threads": 1,
+      "probe_bytes": 67108864,
+      "suites": [
+        "pattern_granularity_rw"
+      ]
+    },
+    {
+      "id": "traffic-bytes268435456-spacing1024-patternrandom-readpct0-threads1-probe_bytes67108864",
+      "mode": "traffic",
+      "bytes": 268435456,
+      "spacing": 1024,
+      "pattern": "random",
+      "readpct": 0,
+      "threads": 1,
+      "probe_bytes": 67108864,
+      "suites": [
+        "pattern_granularity_rw"
+      ]
+    },
+    {
+      "id": "traffic-bytes268435456-spacing1024-patternrandom-readpct50-threads1-probe_bytes67108864",
+      "mode": "traffic",
+      "bytes": 268435456,
+      "spacing": 1024,
+      "pattern": "random",
+      "readpct": 50,
+      "threads": 1,
+      "probe_bytes": 67108864,
+      "suites": [
+        "pattern_granularity_rw"
+      ]
+    },
+    {
+      "id": "traffic-bytes268435456-spacing1024-patternrandom-readpct70-threads1-probe_bytes67108864",
+      "mode": "traffic",
+      "bytes": 268435456,
+      "spacing": 1024,
+      "pattern": "random",
+      "readpct": 70,
+      "threads": 1,
+      "probe_bytes": 67108864,
+      "suites": [
+        "pattern_granularity_rw"
+      ]
+    },
+    {
+      "id": "traffic-bytes268435456-spacing1024-patternrandom-readpct100-threads1-probe_bytes67108864",
+      "mode": "traffic",
+      "bytes": 268435456,
+      "spacing": 1024,
+      "pattern": "random",
+      "readpct": 100,
+      "threads": 1,
+      "probe_bytes": 67108864,
+      "suites": [
+        "pattern_granularity_rw"
+      ]
+    },
+    {
+      "id": "traffic-bytes268435456-spacing64-patternsequential-readpct100-threads2-probe_bytes67108864",
+      "mode": "traffic",
+      "bytes": 268435456,
+      "spacing": 64,
+      "pattern": "sequential",
+      "readpct": 100,
+      "threads": 2,
+      "probe_bytes": 67108864,
+      "suites": [
+        "intensity"
+      ]
+    },
+    {
+      "id": "traffic-bytes268435456-spacing64-patternsequential-readpct100-threads4-probe_bytes67108864",
+      "mode": "traffic",
+      "bytes": 268435456,
+      "spacing": 64,
+      "pattern": "sequential",
+      "readpct": 100,
+      "threads": 4,
+      "probe_bytes": 67108864,
+      "suites": [
+        "intensity"
+      ]
+    },
+    {
+      "id": "traffic-bytes268435456-spacing64-patternsequential-readpct100-threads6-probe_bytes67108864",
+      "mode": "traffic",
+      "bytes": 268435456,
+      "spacing": 64,
+      "pattern": "sequential",
+      "readpct": 100,
+      "threads": 6,
+      "probe_bytes": 67108864,
+      "suites": [
+        "intensity"
+      ]
+    },
+    {
+      "id": "traffic-bytes268435456-spacing64-patternsequential-readpct100-threads8-probe_bytes67108864",
+      "mode": "traffic",
+      "bytes": 268435456,
+      "spacing": 64,
+      "pattern": "sequential",
+      "readpct": 100,
+      "threads": 8,
+      "probe_bytes": 67108864,
+      "suites": [
+        "intensity"
+      ]
+    },
+    {
+      "id": "traffic-bytes268435456-spacing64-patternsequential-readpct100-threads12-probe_bytes67108864",
+      "mode": "traffic",
+      "bytes": 268435456,
+      "spacing": 64,
+      "pattern": "sequential",
+      "readpct": 100,
+      "threads": 12,
+      "probe_bytes": 67108864,
+      "suites": [
+        "intensity"
+      ]
+    },
+    {
+      "id": "traffic-bytes65536-spacing64-patternsequential-readpct100-threads1-probe_bytes67108864",
+      "mode": "traffic",
+      "bytes": 65536,
+      "spacing": 64,
+      "pattern": "sequential",
+      "readpct": 100,
+      "threads": 1,
+      "probe_bytes": 67108864,
+      "suites": [
+        "pitfall_cache_reuse"
+      ]
+    },
+    {
+      "id": "chase-bytes8192-spacing128-patternrandom",
+      "mode": "chase",
+      "bytes": 8192,
+      "spacing": 128,
+      "pattern": "random",
+      "suites": [
+        "page_locality"
+      ]
+    },
+    {
+      "id": "chase-bytes1048576-spacing16384-patternrandom",
+      "mode": "chase",
+      "bytes": 1048576,
+      "spacing": 16384,
+      "pattern": "random",
+      "suites": [
+        "page_locality"
+      ]
+    },
+    {
+      "id": "chase-bytes32768-spacing128-patternrandom",
+      "mode": "chase",
+      "bytes": 32768,
+      "spacing": 128,
+      "pattern": "random",
+      "suites": [
+        "page_locality"
+      ]
+    },
+    {
+      "id": "chase-bytes4194304-spacing16384-patternrandom",
+      "mode": "chase",
+      "bytes": 4194304,
+      "spacing": 16384,
+      "pattern": "random",
+      "suites": [
+        "page_locality"
+      ]
+    },
+    {
+      "id": "chase-bytes16777216-spacing16384-patternrandom",
+      "mode": "chase",
+      "bytes": 16777216,
+      "spacing": 16384,
+      "pattern": "random",
+      "suites": [
+        "page_locality"
+      ]
+    },
+    {
+      "id": "chase-bytes524288-spacing128-patternrandom",
+      "mode": "chase",
+      "bytes": 524288,
+      "spacing": 128,
+      "pattern": "random",
+      "suites": [
+        "page_locality"
+      ]
+    },
+    {
+      "id": "chase-bytes67108864-spacing16384-patternrandom",
+      "mode": "chase",
+      "bytes": 67108864,
+      "spacing": 16384,
+      "pattern": "random",
+      "suites": [
+        "page_locality"
+      ]
+    },
+    {
+      "id": "chase-bytes2097152-spacing128-patternrandom",
+      "mode": "chase",
+      "bytes": 2097152,
+      "spacing": 128,
+      "pattern": "random",
+      "suites": [
+        "page_locality"
+      ]
+    },
+    {
+      "id": "chase-bytes268435456-spacing16384-patternrandom",
+      "mode": "chase",
+      "bytes": 268435456,
+      "spacing": 16384,
+      "pattern": "random",
+      "suites": [
+        "page_locality"
+      ]
+    }
+  ]
+}

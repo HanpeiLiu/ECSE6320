@@ -1,0 +1,65 @@
+[
+  {
+    "command": [
+      "clang",
+      "-O3",
+      "-ffp-contract=off",
+      "-g",
+      "-fno-vectorize",
+      "-fno-slp-vectorize",
+      "-DBUILD_NAME=\"scalar\"",
+      "-Rpass=loop-vectorize",
+      "-Rpass-missed=loop-vectorize",
+      "-Rpass-analysis=loop-vectorize",
+      "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/negative_dot.c",
+      "-o",
+      "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/build/negative-scalar"
+    ],
+    "started_utc": "2026-10-23T21:03:42.970146+00:00",
+    "elapsed_wall_s": 0.36379287485033274,
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/negative_dot.c:11:5: remark: loop not vectorized [-Rpass-missed=loop-vectorize]\n   11 |     for(size_t i=0;i<n;i++)sum=sum+x[i]*y[i];\n      |     ^\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/negative_dot.c:19:5: remark: loop not vectorized [-Rpass-missed=loop-vectorize]\n   19 |     for(size_t i=0;i<n;i++){x[i]=(float)((int)(i%17)-8)/16;y[i]=(float)((int)(i%13)-6)/16;}\n      |     ^\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/negative_dot.c:20:17: remark: loop not vectorized [-Rpass-missed=loop-vectorize]\n   20 |     float ref=0;for(size_t i=0;i<n;i++)ref=ref+x[i]*y[i];\n      |                 ^\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/negative_dot.c:25:44: remark: loop not vectorized [-Rpass-missed=loop-vectorize]\n   25 |     cpu_count a=cpu_snapshot();t=wall_ns();for(size_t j=0;j<reps;j++)sink=observable_dot(x,y,n);\n      |                                            ^\n"
+  },
+  {
+    "command": [
+      "clang",
+      "-O3",
+      "-ffp-contract=off",
+      "-g",
+      "-DBUILD_NAME=\"auto\"",
+      "-Rpass=loop-vectorize",
+      "-Rpass-missed=loop-vectorize",
+      "-Rpass-analysis=loop-vectorize",
+      "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/negative_dot.c",
+      "-o",
+      "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/build/negative-auto"
+    ],
+    "started_utc": "2026-10-23T21:03:43.358664+00:00",
+    "elapsed_wall_s": 0.08808966726064682,
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/negative_dot.c:11:32: remark: loop not vectorized: read with atomic ordering or volatile read [-Rpass-analysis=loop-vectorize]\n   11 |     for(size_t i=0;i<n;i++)sum=sum+x[i]*y[i];\n      |                                ^\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/negative_dot.c:11:5: remark: loop not vectorized [-Rpass-missed=loop-vectorize]\n   11 |     for(size_t i=0;i<n;i++)sum=sum+x[i]*y[i];\n      |     ^\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/negative_dot.c:19:5: remark: the cost-model indicates that interleaving is not beneficial [-Rpass-analysis=loop-vectorize]\n   19 |     for(size_t i=0;i<n;i++){x[i]=(float)((int)(i%17)-8)/16;y[i]=(float)((int)(i%13)-6)/16;}\n      |     ^\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/negative_dot.c:19:5: remark: vectorized loop (vectorization width: 4, interleaved count: 1) [-Rpass=loop-vectorize]\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/negative_dot.c:20:17: remark: vectorized loop (vectorization width: 4, interleaved count: 4) [-Rpass=loop-vectorize]\n   20 |     float ref=0;for(size_t i=0;i<n;i++)ref=ref+x[i]*y[i];\n      |                 ^\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/negative_dot.c:25:75: remark: loop not vectorized: call instruction cannot be vectorized [-Rpass-analysis=loop-vectorize]\n   25 |     cpu_count a=cpu_snapshot();t=wall_ns();for(size_t j=0;j<reps;j++)sink=observable_dot(x,y,n);\n      |                                                                           ^\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/negative_dot.c:25:44: remark: loop not vectorized: instruction cannot be vectorized [-Rpass-analysis=loop-vectorize]\n   25 |     cpu_count a=cpu_snapshot();t=wall_ns();for(size_t j=0;j<reps;j++)sink=observable_dot(x,y,n);\n      |                                            ^\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/negative_dot.c:25:44: remark: loop not vectorized [-Rpass-missed=loop-vectorize]\n"
+  },
+  {
+    "command": [
+      "clang",
+      "-O3",
+      "-ffp-contract=off",
+      "-g",
+      "-mcpu=native",
+      "-DBUILD_NAME=\"native\"",
+      "-Rpass=loop-vectorize",
+      "-Rpass-missed=loop-vectorize",
+      "-Rpass-analysis=loop-vectorize",
+      "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/negative_dot.c",
+      "-o",
+      "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/build/negative-native"
+    ],
+    "started_utc": "2026-10-23T21:03:43.456822+00:00",
+    "elapsed_wall_s": 0.08398962486535311,
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/negative_dot.c:11:32: remark: loop not vectorized: read with atomic ordering or volatile read [-Rpass-analysis=loop-vectorize]\n   11 |     for(size_t i=0;i<n;i++)sum=sum+x[i]*y[i];\n      |                                ^\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/negative_dot.c:11:5: remark: loop not vectorized [-Rpass-missed=loop-vectorize]\n   11 |     for(size_t i=0;i<n;i++)sum=sum+x[i]*y[i];\n      |     ^\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/negative_dot.c:19:5: remark: the cost-model indicates that interleaving is not beneficial [-Rpass-analysis=loop-vectorize]\n   19 |     for(size_t i=0;i<n;i++){x[i]=(float)((int)(i%17)-8)/16;y[i]=(float)((int)(i%13)-6)/16;}\n      |     ^\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/negative_dot.c:19:5: remark: vectorized loop (vectorization width: 4, interleaved count: 1) [-Rpass=loop-vectorize]\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/negative_dot.c:20:17: remark: vectorized loop (vectorization width: 4, interleaved count: 4) [-Rpass=loop-vectorize]\n   20 |     float ref=0;for(size_t i=0;i<n;i++)ref=ref+x[i]*y[i];\n      |                 ^\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/negative_dot.c:25:75: remark: loop not vectorized: call instruction cannot be vectorized [-Rpass-analysis=loop-vectorize]\n   25 |     cpu_count a=cpu_snapshot();t=wall_ns();for(size_t j=0;j<reps;j++)sink=observable_dot(x,y,n);\n      |                                                                           ^\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/negative_dot.c:25:44: remark: loop not vectorized: instruction cannot be vectorized [-Rpass-analysis=loop-vectorize]\n   25 |     cpu_count a=cpu_snapshot();t=wall_ns();for(size_t j=0;j<reps;j++)sink=observable_dot(x,y,n);\n      |                                            ^\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/negative_dot.c:25:44: remark: loop not vectorized [-Rpass-missed=loop-vectorize]\n"
+  }
+]

@@ -1,0 +1,176 @@
+[
+  {
+    "command": [
+      "clang",
+      "-O3",
+      "-ffp-contract=off",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-fno-vectorize",
+      "-fno-slp-vectorize",
+      "-Rpass=loop-vectorize",
+      "-Rpass-missed=loop-vectorize",
+      "-Rpass-analysis=loop-vectorize",
+      "-c",
+      "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c",
+      "-o",
+      "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/build/scalar-kernels.o"
+    ],
+    "started_utc": "2026-10-23T20:19:58.036794+00:00",
+    "elapsed_wall_s": 0.03503645956516266,
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:19:1: remark: loop not vectorized [-Rpass-missed=loop-vectorize]\n   19 | DEFINE(float,f32)\n      | ^\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:19:1: remark: loop not vectorized [-Rpass-missed=loop-vectorize]\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:19:1: remark: loop not vectorized [-Rpass-missed=loop-vectorize]\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:19:1: remark: loop not vectorized [-Rpass-missed=loop-vectorize]\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:19:1: remark: loop not vectorized [-Rpass-missed=loop-vectorize]\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:19:1: remark: loop not vectorized [-Rpass-missed=loop-vectorize]\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:19:1: remark: loop not vectorized [-Rpass-missed=loop-vectorize]\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:20:1: remark: loop not vectorized [-Rpass-missed=loop-vectorize]\n   20 | DEFINE(double,f64)\n      | ^\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:20:1: remark: loop not vectorized [-Rpass-missed=loop-vectorize]\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:20:1: remark: loop not vectorized [-Rpass-missed=loop-vectorize]\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:20:1: remark: loop not vectorized [-Rpass-missed=loop-vectorize]\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:20:1: remark: loop not vectorized [-Rpass-missed=loop-vectorize]\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:20:1: remark: loop not vectorized [-Rpass-missed=loop-vectorize]\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:20:1: remark: loop not vectorized [-Rpass-missed=loop-vectorize]\n"
+  },
+  {
+    "command": [
+      "clang",
+      "-O3",
+      "-ffp-contract=off",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-fno-vectorize",
+      "-fno-slp-vectorize",
+      "-DBUILD_NAME=\"scalar\"",
+      "-c",
+      "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/bench.c",
+      "-o",
+      "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/build/scalar-driver.o"
+    ],
+    "started_utc": "2026-10-23T20:19:58.072219+00:00",
+    "elapsed_wall_s": 0.12511329166591167,
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "In file included from /Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/bench.c:2:\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/../../shared/measurement.h:40:17: warning: unused function 'rng_next' [-Wunused-function]\n   40 | static uint64_t rng_next(uint64_t *s) {\n      |                 ^~~~~~~~\n1 warning generated.\n"
+  },
+  {
+    "command": [
+      "clang",
+      "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/build/scalar-driver.o",
+      "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/build/scalar-kernels.o",
+      "-o",
+      "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/build/scalar"
+    ],
+    "started_utc": "2026-10-23T20:19:58.197369+00:00",
+    "elapsed_wall_s": 0.03054941538721323,
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "clang",
+      "-O3",
+      "-ffp-contract=off",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-Rpass=loop-vectorize",
+      "-Rpass-missed=loop-vectorize",
+      "-Rpass-analysis=loop-vectorize",
+      "-c",
+      "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c",
+      "-o",
+      "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/build/auto-kernels.o"
+    ],
+    "started_utc": "2026-10-23T20:19:58.237200+00:00",
+    "elapsed_wall_s": 0.038516707718372345,
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:19:1: remark: vectorized loop (vectorization width: 4, interleaved count: 4) [-Rpass=loop-vectorize]\n   19 | DEFINE(float,f32)\n      | ^\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:19:1: remark: vectorized loop (vectorization width: 4, interleaved count: 4) [-Rpass=loop-vectorize]\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:19:1: remark: vectorized loop (vectorization width: 4, interleaved count: 4) [-Rpass=loop-vectorize]\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:19:1: remark: vectorized loop (vectorization width: 4, interleaved count: 4) [-Rpass=loop-vectorize]\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:19:1: remark: vectorized loop (vectorization width: 4, interleaved count: 4) [-Rpass=loop-vectorize]\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:19:1: remark: vectorized loop (vectorization width: 4, interleaved count: 4) [-Rpass=loop-vectorize]\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:19:1: remark: vectorized loop (vectorization width: 4, interleaved count: 4) [-Rpass=loop-vectorize]\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:20:1: remark: vectorized loop (vectorization width: 2, interleaved count: 4) [-Rpass=loop-vectorize]\n   20 | DEFINE(double,f64)\n      | ^\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:20:1: remark: vectorized loop (vectorization width: 2, interleaved count: 4) [-Rpass=loop-vectorize]\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:20:1: remark: vectorized loop (vectorization width: 2, interleaved count: 4) [-Rpass=loop-vectorize]\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:20:1: remark: vectorized loop (vectorization width: 2, interleaved count: 4) [-Rpass=loop-vectorize]\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:20:1: remark: vectorized loop (vectorization width: 2, interleaved count: 4) [-Rpass=loop-vectorize]\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:20:1: remark: vectorized loop (vectorization width: 2, interleaved count: 4) [-Rpass=loop-vectorize]\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:20:1: remark: vectorized loop (vectorization width: 2, interleaved count: 4) [-Rpass=loop-vectorize]\n"
+  },
+  {
+    "command": [
+      "clang",
+      "-O3",
+      "-ffp-contract=off",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-DBUILD_NAME=\"auto\"",
+      "-c",
+      "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/bench.c",
+      "-o",
+      "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/build/auto-driver.o"
+    ],
+    "started_utc": "2026-10-23T20:19:58.275908+00:00",
+    "elapsed_wall_s": 0.10682258382439613,
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "In file included from /Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/bench.c:2:\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/../../shared/measurement.h:40:17: warning: unused function 'rng_next' [-Wunused-function]\n   40 | static uint64_t rng_next(uint64_t *s) {\n      |                 ^~~~~~~~\n1 warning generated.\n"
+  },
+  {
+    "command": [
+      "clang",
+      "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/build/auto-driver.o",
+      "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/build/auto-kernels.o",
+      "-o",
+      "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/build/auto"
+    ],
+    "started_utc": "2026-10-23T20:19:58.382769+00:00",
+    "elapsed_wall_s": 0.027621541172266006,
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "clang",
+      "-O3",
+      "-ffp-contract=off",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-mcpu=native",
+      "-Rpass=loop-vectorize",
+      "-Rpass-missed=loop-vectorize",
+      "-Rpass-analysis=loop-vectorize",
+      "-c",
+      "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c",
+      "-o",
+      "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/build/native-kernels.o"
+    ],
+    "started_utc": "2026-10-23T20:19:58.419897+00:00",
+    "elapsed_wall_s": 0.03880145773291588,
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:19:1: remark: vectorized loop (vectorization width: 4, interleaved count: 4) [-Rpass=loop-vectorize]\n   19 | DEFINE(float,f32)\n      | ^\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:19:1: remark: vectorized loop (vectorization width: 4, interleaved count: 4) [-Rpass=loop-vectorize]\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:19:1: remark: vectorized loop (vectorization width: 4, interleaved count: 4) [-Rpass=loop-vectorize]\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:19:1: remark: vectorized loop (vectorization width: 4, interleaved count: 4) [-Rpass=loop-vectorize]\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:19:1: remark: vectorized loop (vectorization width: 4, interleaved count: 4) [-Rpass=loop-vectorize]\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:19:1: remark: vectorized loop (vectorization width: 4, interleaved count: 4) [-Rpass=loop-vectorize]\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:19:1: remark: vectorized loop (vectorization width: 4, interleaved count: 4) [-Rpass=loop-vectorize]\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:20:1: remark: vectorized loop (vectorization width: 2, interleaved count: 4) [-Rpass=loop-vectorize]\n   20 | DEFINE(double,f64)\n      | ^\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:20:1: remark: vectorized loop (vectorization width: 2, interleaved count: 4) [-Rpass=loop-vectorize]\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:20:1: remark: vectorized loop (vectorization width: 2, interleaved count: 4) [-Rpass=loop-vectorize]\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:20:1: remark: vectorized loop (vectorization width: 2, interleaved count: 4) [-Rpass=loop-vectorize]\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:20:1: remark: vectorized loop (vectorization width: 2, interleaved count: 4) [-Rpass=loop-vectorize]\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:20:1: remark: vectorized loop (vectorization width: 2, interleaved count: 4) [-Rpass=loop-vectorize]\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/kernels.c:20:1: remark: vectorized loop (vectorization width: 2, interleaved count: 4) [-Rpass=loop-vectorize]\n"
+  },
+  {
+    "command": [
+      "clang",
+      "-O3",
+      "-ffp-contract=off",
+      "-g",
+      "-Wall",
+      "-Wextra",
+      "-mcpu=native",
+      "-DBUILD_NAME=\"native\"",
+      "-c",
+      "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/bench.c",
+      "-o",
+      "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/build/native-driver.o"
+    ],
+    "started_utc": "2026-10-23T20:19:58.458910+00:00",
+    "elapsed_wall_s": 0.10691833309829235,
+    "returncode": 0,
+    "stdout": "",
+    "stderr": "In file included from /Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/bench.c:2:\n/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/../../shared/measurement.h:40:17: warning: unused function 'rng_next' [-Wunused-function]\n   40 | static uint64_t rng_next(uint64_t *s) {\n      |                 ^~~~~~~~\n1 warning generated.\n"
+  },
+  {
+    "command": [
+      "clang",
+      "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/build/native-driver.o",
+      "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/build/native-kernels.o",
+      "-o",
+      "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/build/native"
+    ],
+    "started_utc": "2026-10-23T20:19:58.565867+00:00",
+    "elapsed_wall_s": 0.028421957977116108,
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  }
+]

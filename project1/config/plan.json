@@ -1,0 +1,2906 @@
+{
+  "created_utc": "2026-10-23T20:19:58.719353+00:00",
+  "trials": 5,
+  "target_seconds": 0.03,
+  "seed": 6320,
+  "cases": [
+    {
+      "id": "axpy-f32-n1024-s1-o0-scalar",
+      "kernel": "axpy",
+      "dtype": "f32",
+      "n": 1024,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "baseline_locality_dtype",
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f32-n1024-s1-o0-auto",
+      "kernel": "axpy",
+      "dtype": "f32",
+      "n": 1024,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "baseline_locality_dtype",
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f32-n1024-s1-o0-native",
+      "kernel": "axpy",
+      "dtype": "f32",
+      "n": 1024,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "baseline_locality_dtype",
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f32-n8192-s1-o0-scalar",
+      "kernel": "axpy",
+      "dtype": "f32",
+      "n": 8192,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "axpy-f32-n8192-s1-o0-auto",
+      "kernel": "axpy",
+      "dtype": "f32",
+      "n": 8192,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "axpy-f32-n8192-s1-o0-native",
+      "kernel": "axpy",
+      "dtype": "f32",
+      "n": 8192,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "axpy-f32-n16384-s1-o0-scalar",
+      "kernel": "axpy",
+      "dtype": "f32",
+      "n": 16384,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "axpy-f32-n16384-s1-o0-auto",
+      "kernel": "axpy",
+      "dtype": "f32",
+      "n": 16384,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "axpy-f32-n16384-s1-o0-native",
+      "kernel": "axpy",
+      "dtype": "f32",
+      "n": 16384,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "axpy-f32-n65536-s1-o0-scalar",
+      "kernel": "axpy",
+      "dtype": "f32",
+      "n": 65536,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "baseline_locality_dtype",
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f32-n65536-s1-o0-auto",
+      "kernel": "axpy",
+      "dtype": "f32",
+      "n": 65536,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "baseline_locality_dtype",
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f32-n65536-s1-o0-native",
+      "kernel": "axpy",
+      "dtype": "f32",
+      "n": 65536,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "baseline_locality_dtype",
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f32-n262144-s1-o0-scalar",
+      "kernel": "axpy",
+      "dtype": "f32",
+      "n": 262144,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "axpy-f32-n262144-s1-o0-auto",
+      "kernel": "axpy",
+      "dtype": "f32",
+      "n": 262144,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "axpy-f32-n262144-s1-o0-native",
+      "kernel": "axpy",
+      "dtype": "f32",
+      "n": 262144,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "axpy-f32-n1048576-s1-o0-scalar",
+      "kernel": "axpy",
+      "dtype": "f32",
+      "n": 1048576,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "axpy-f32-n1048576-s1-o0-auto",
+      "kernel": "axpy",
+      "dtype": "f32",
+      "n": 1048576,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "axpy-f32-n1048576-s1-o0-native",
+      "kernel": "axpy",
+      "dtype": "f32",
+      "n": 1048576,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "axpy-f32-n4194304-s1-o0-scalar",
+      "kernel": "axpy",
+      "dtype": "f32",
+      "n": 4194304,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "axpy-f32-n4194304-s1-o0-auto",
+      "kernel": "axpy",
+      "dtype": "f32",
+      "n": 4194304,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "axpy-f32-n4194304-s1-o0-native",
+      "kernel": "axpy",
+      "dtype": "f32",
+      "n": 4194304,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "axpy-f32-n16777216-s1-o0-scalar",
+      "kernel": "axpy",
+      "dtype": "f32",
+      "n": 16777216,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "axpy-f32-n16777216-s1-o0-auto",
+      "kernel": "axpy",
+      "dtype": "f32",
+      "n": 16777216,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "axpy-f32-n16777216-s1-o0-native",
+      "kernel": "axpy",
+      "dtype": "f32",
+      "n": 16777216,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "axpy-f64-n1024-s1-o0-scalar",
+      "kernel": "axpy",
+      "dtype": "f64",
+      "n": 1024,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "baseline_locality_dtype",
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f64-n1024-s1-o0-auto",
+      "kernel": "axpy",
+      "dtype": "f64",
+      "n": 1024,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "baseline_locality_dtype",
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f64-n1024-s1-o0-native",
+      "kernel": "axpy",
+      "dtype": "f64",
+      "n": 1024,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "baseline_locality_dtype",
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f64-n8192-s1-o0-scalar",
+      "kernel": "axpy",
+      "dtype": "f64",
+      "n": 8192,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "axpy-f64-n8192-s1-o0-auto",
+      "kernel": "axpy",
+      "dtype": "f64",
+      "n": 8192,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "axpy-f64-n8192-s1-o0-native",
+      "kernel": "axpy",
+      "dtype": "f64",
+      "n": 8192,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "axpy-f64-n16384-s1-o0-scalar",
+      "kernel": "axpy",
+      "dtype": "f64",
+      "n": 16384,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "axpy-f64-n16384-s1-o0-auto",
+      "kernel": "axpy",
+      "dtype": "f64",
+      "n": 16384,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "axpy-f64-n16384-s1-o0-native",
+      "kernel": "axpy",
+      "dtype": "f64",
+      "n": 16384,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "axpy-f64-n65536-s1-o0-scalar",
+      "kernel": "axpy",
+      "dtype": "f64",
+      "n": 65536,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "baseline_locality_dtype",
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f64-n65536-s1-o0-auto",
+      "kernel": "axpy",
+      "dtype": "f64",
+      "n": 65536,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "baseline_locality_dtype",
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f64-n65536-s1-o0-native",
+      "kernel": "axpy",
+      "dtype": "f64",
+      "n": 65536,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "baseline_locality_dtype",
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f64-n262144-s1-o0-scalar",
+      "kernel": "axpy",
+      "dtype": "f64",
+      "n": 262144,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "axpy-f64-n262144-s1-o0-auto",
+      "kernel": "axpy",
+      "dtype": "f64",
+      "n": 262144,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "axpy-f64-n262144-s1-o0-native",
+      "kernel": "axpy",
+      "dtype": "f64",
+      "n": 262144,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "axpy-f64-n1048576-s1-o0-scalar",
+      "kernel": "axpy",
+      "dtype": "f64",
+      "n": 1048576,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "axpy-f64-n1048576-s1-o0-auto",
+      "kernel": "axpy",
+      "dtype": "f64",
+      "n": 1048576,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "axpy-f64-n1048576-s1-o0-native",
+      "kernel": "axpy",
+      "dtype": "f64",
+      "n": 1048576,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "axpy-f64-n4194304-s1-o0-scalar",
+      "kernel": "axpy",
+      "dtype": "f64",
+      "n": 4194304,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "axpy-f64-n4194304-s1-o0-auto",
+      "kernel": "axpy",
+      "dtype": "f64",
+      "n": 4194304,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "axpy-f64-n4194304-s1-o0-native",
+      "kernel": "axpy",
+      "dtype": "f64",
+      "n": 4194304,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "axpy-f64-n16777216-s1-o0-scalar",
+      "kernel": "axpy",
+      "dtype": "f64",
+      "n": 16777216,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "axpy-f64-n16777216-s1-o0-auto",
+      "kernel": "axpy",
+      "dtype": "f64",
+      "n": 16777216,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "axpy-f64-n16777216-s1-o0-native",
+      "kernel": "axpy",
+      "dtype": "f64",
+      "n": 16777216,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "mul-f32-n1024-s1-o0-scalar",
+      "kernel": "mul",
+      "dtype": "f32",
+      "n": 1024,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "mul-f32-n1024-s1-o0-auto",
+      "kernel": "mul",
+      "dtype": "f32",
+      "n": 1024,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "mul-f32-n1024-s1-o0-native",
+      "kernel": "mul",
+      "dtype": "f32",
+      "n": 1024,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "mul-f32-n8192-s1-o0-scalar",
+      "kernel": "mul",
+      "dtype": "f32",
+      "n": 8192,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "mul-f32-n8192-s1-o0-auto",
+      "kernel": "mul",
+      "dtype": "f32",
+      "n": 8192,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "mul-f32-n8192-s1-o0-native",
+      "kernel": "mul",
+      "dtype": "f32",
+      "n": 8192,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "mul-f32-n16384-s1-o0-scalar",
+      "kernel": "mul",
+      "dtype": "f32",
+      "n": 16384,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "mul-f32-n16384-s1-o0-auto",
+      "kernel": "mul",
+      "dtype": "f32",
+      "n": 16384,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "mul-f32-n16384-s1-o0-native",
+      "kernel": "mul",
+      "dtype": "f32",
+      "n": 16384,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "mul-f32-n65536-s1-o0-scalar",
+      "kernel": "mul",
+      "dtype": "f32",
+      "n": 65536,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "baseline_locality_dtype",
+        "stride"
+      ]
+    },
+    {
+      "id": "mul-f32-n65536-s1-o0-auto",
+      "kernel": "mul",
+      "dtype": "f32",
+      "n": 65536,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "baseline_locality_dtype",
+        "stride"
+      ]
+    },
+    {
+      "id": "mul-f32-n65536-s1-o0-native",
+      "kernel": "mul",
+      "dtype": "f32",
+      "n": 65536,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "baseline_locality_dtype",
+        "stride"
+      ]
+    },
+    {
+      "id": "mul-f32-n262144-s1-o0-scalar",
+      "kernel": "mul",
+      "dtype": "f32",
+      "n": 262144,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "mul-f32-n262144-s1-o0-auto",
+      "kernel": "mul",
+      "dtype": "f32",
+      "n": 262144,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "mul-f32-n262144-s1-o0-native",
+      "kernel": "mul",
+      "dtype": "f32",
+      "n": 262144,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "mul-f32-n1048576-s1-o0-scalar",
+      "kernel": "mul",
+      "dtype": "f32",
+      "n": 1048576,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "mul-f32-n1048576-s1-o0-auto",
+      "kernel": "mul",
+      "dtype": "f32",
+      "n": 1048576,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "mul-f32-n1048576-s1-o0-native",
+      "kernel": "mul",
+      "dtype": "f32",
+      "n": 1048576,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "mul-f32-n4194304-s1-o0-scalar",
+      "kernel": "mul",
+      "dtype": "f32",
+      "n": 4194304,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "baseline_locality_dtype",
+        "stride"
+      ]
+    },
+    {
+      "id": "mul-f32-n4194304-s1-o0-auto",
+      "kernel": "mul",
+      "dtype": "f32",
+      "n": 4194304,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "baseline_locality_dtype",
+        "stride"
+      ]
+    },
+    {
+      "id": "mul-f32-n4194304-s1-o0-native",
+      "kernel": "mul",
+      "dtype": "f32",
+      "n": 4194304,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "baseline_locality_dtype",
+        "stride"
+      ]
+    },
+    {
+      "id": "mul-f32-n16777216-s1-o0-scalar",
+      "kernel": "mul",
+      "dtype": "f32",
+      "n": 16777216,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "mul-f32-n16777216-s1-o0-auto",
+      "kernel": "mul",
+      "dtype": "f32",
+      "n": 16777216,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "mul-f32-n16777216-s1-o0-native",
+      "kernel": "mul",
+      "dtype": "f32",
+      "n": 16777216,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "mul-f64-n1024-s1-o0-scalar",
+      "kernel": "mul",
+      "dtype": "f64",
+      "n": 1024,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "mul-f64-n1024-s1-o0-auto",
+      "kernel": "mul",
+      "dtype": "f64",
+      "n": 1024,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "mul-f64-n1024-s1-o0-native",
+      "kernel": "mul",
+      "dtype": "f64",
+      "n": 1024,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "mul-f64-n8192-s1-o0-scalar",
+      "kernel": "mul",
+      "dtype": "f64",
+      "n": 8192,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "mul-f64-n8192-s1-o0-auto",
+      "kernel": "mul",
+      "dtype": "f64",
+      "n": 8192,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "mul-f64-n8192-s1-o0-native",
+      "kernel": "mul",
+      "dtype": "f64",
+      "n": 8192,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "mul-f64-n16384-s1-o0-scalar",
+      "kernel": "mul",
+      "dtype": "f64",
+      "n": 16384,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "mul-f64-n16384-s1-o0-auto",
+      "kernel": "mul",
+      "dtype": "f64",
+      "n": 16384,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "mul-f64-n16384-s1-o0-native",
+      "kernel": "mul",
+      "dtype": "f64",
+      "n": 16384,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "mul-f64-n65536-s1-o0-scalar",
+      "kernel": "mul",
+      "dtype": "f64",
+      "n": 65536,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "mul-f64-n65536-s1-o0-auto",
+      "kernel": "mul",
+      "dtype": "f64",
+      "n": 65536,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "mul-f64-n65536-s1-o0-native",
+      "kernel": "mul",
+      "dtype": "f64",
+      "n": 65536,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "mul-f64-n262144-s1-o0-scalar",
+      "kernel": "mul",
+      "dtype": "f64",
+      "n": 262144,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "mul-f64-n262144-s1-o0-auto",
+      "kernel": "mul",
+      "dtype": "f64",
+      "n": 262144,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "mul-f64-n262144-s1-o0-native",
+      "kernel": "mul",
+      "dtype": "f64",
+      "n": 262144,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "mul-f64-n1048576-s1-o0-scalar",
+      "kernel": "mul",
+      "dtype": "f64",
+      "n": 1048576,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "mul-f64-n1048576-s1-o0-auto",
+      "kernel": "mul",
+      "dtype": "f64",
+      "n": 1048576,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "mul-f64-n1048576-s1-o0-native",
+      "kernel": "mul",
+      "dtype": "f64",
+      "n": 1048576,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "mul-f64-n4194304-s1-o0-scalar",
+      "kernel": "mul",
+      "dtype": "f64",
+      "n": 4194304,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "mul-f64-n4194304-s1-o0-auto",
+      "kernel": "mul",
+      "dtype": "f64",
+      "n": 4194304,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "mul-f64-n4194304-s1-o0-native",
+      "kernel": "mul",
+      "dtype": "f64",
+      "n": 4194304,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "mul-f64-n16777216-s1-o0-scalar",
+      "kernel": "mul",
+      "dtype": "f64",
+      "n": 16777216,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "mul-f64-n16777216-s1-o0-auto",
+      "kernel": "mul",
+      "dtype": "f64",
+      "n": 16777216,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "mul-f64-n16777216-s1-o0-native",
+      "kernel": "mul",
+      "dtype": "f64",
+      "n": 16777216,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "stencil-f32-n1024-s1-o0-scalar",
+      "kernel": "stencil",
+      "dtype": "f32",
+      "n": 1024,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "stencil-f32-n1024-s1-o0-auto",
+      "kernel": "stencil",
+      "dtype": "f32",
+      "n": 1024,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "stencil-f32-n1024-s1-o0-native",
+      "kernel": "stencil",
+      "dtype": "f32",
+      "n": 1024,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "stencil-f32-n8192-s1-o0-scalar",
+      "kernel": "stencil",
+      "dtype": "f32",
+      "n": 8192,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "stencil-f32-n8192-s1-o0-auto",
+      "kernel": "stencil",
+      "dtype": "f32",
+      "n": 8192,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "stencil-f32-n8192-s1-o0-native",
+      "kernel": "stencil",
+      "dtype": "f32",
+      "n": 8192,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "stencil-f32-n16384-s1-o0-scalar",
+      "kernel": "stencil",
+      "dtype": "f32",
+      "n": 16384,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "stencil-f32-n16384-s1-o0-auto",
+      "kernel": "stencil",
+      "dtype": "f32",
+      "n": 16384,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "stencil-f32-n16384-s1-o0-native",
+      "kernel": "stencil",
+      "dtype": "f32",
+      "n": 16384,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "stencil-f32-n65536-s1-o0-scalar",
+      "kernel": "stencil",
+      "dtype": "f32",
+      "n": 65536,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "stencil-f32-n65536-s1-o0-auto",
+      "kernel": "stencil",
+      "dtype": "f32",
+      "n": 65536,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "stencil-f32-n65536-s1-o0-native",
+      "kernel": "stencil",
+      "dtype": "f32",
+      "n": 65536,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "stencil-f32-n262144-s1-o0-scalar",
+      "kernel": "stencil",
+      "dtype": "f32",
+      "n": 262144,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "stencil-f32-n262144-s1-o0-auto",
+      "kernel": "stencil",
+      "dtype": "f32",
+      "n": 262144,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "stencil-f32-n262144-s1-o0-native",
+      "kernel": "stencil",
+      "dtype": "f32",
+      "n": 262144,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "stencil-f32-n1048576-s1-o0-scalar",
+      "kernel": "stencil",
+      "dtype": "f32",
+      "n": 1048576,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "stencil-f32-n1048576-s1-o0-auto",
+      "kernel": "stencil",
+      "dtype": "f32",
+      "n": 1048576,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "stencil-f32-n1048576-s1-o0-native",
+      "kernel": "stencil",
+      "dtype": "f32",
+      "n": 1048576,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "stencil-f32-n4194304-s1-o0-scalar",
+      "kernel": "stencil",
+      "dtype": "f32",
+      "n": 4194304,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "stencil-f32-n4194304-s1-o0-auto",
+      "kernel": "stencil",
+      "dtype": "f32",
+      "n": 4194304,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "stencil-f32-n4194304-s1-o0-native",
+      "kernel": "stencil",
+      "dtype": "f32",
+      "n": 4194304,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "stencil-f32-n16777216-s1-o0-scalar",
+      "kernel": "stencil",
+      "dtype": "f32",
+      "n": 16777216,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "stencil-f32-n16777216-s1-o0-auto",
+      "kernel": "stencil",
+      "dtype": "f32",
+      "n": 16777216,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "stencil-f32-n16777216-s1-o0-native",
+      "kernel": "stencil",
+      "dtype": "f32",
+      "n": 16777216,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "stencil-f64-n1024-s1-o0-scalar",
+      "kernel": "stencil",
+      "dtype": "f64",
+      "n": 1024,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "stencil-f64-n1024-s1-o0-auto",
+      "kernel": "stencil",
+      "dtype": "f64",
+      "n": 1024,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "stencil-f64-n1024-s1-o0-native",
+      "kernel": "stencil",
+      "dtype": "f64",
+      "n": 1024,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "stencil-f64-n8192-s1-o0-scalar",
+      "kernel": "stencil",
+      "dtype": "f64",
+      "n": 8192,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "stencil-f64-n8192-s1-o0-auto",
+      "kernel": "stencil",
+      "dtype": "f64",
+      "n": 8192,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "stencil-f64-n8192-s1-o0-native",
+      "kernel": "stencil",
+      "dtype": "f64",
+      "n": 8192,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "stencil-f64-n16384-s1-o0-scalar",
+      "kernel": "stencil",
+      "dtype": "f64",
+      "n": 16384,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "stencil-f64-n16384-s1-o0-auto",
+      "kernel": "stencil",
+      "dtype": "f64",
+      "n": 16384,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "stencil-f64-n16384-s1-o0-native",
+      "kernel": "stencil",
+      "dtype": "f64",
+      "n": 16384,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "stencil-f64-n65536-s1-o0-scalar",
+      "kernel": "stencil",
+      "dtype": "f64",
+      "n": 65536,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "stencil-f64-n65536-s1-o0-auto",
+      "kernel": "stencil",
+      "dtype": "f64",
+      "n": 65536,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "stencil-f64-n65536-s1-o0-native",
+      "kernel": "stencil",
+      "dtype": "f64",
+      "n": 65536,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "stencil-f64-n262144-s1-o0-scalar",
+      "kernel": "stencil",
+      "dtype": "f64",
+      "n": 262144,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "stencil-f64-n262144-s1-o0-auto",
+      "kernel": "stencil",
+      "dtype": "f64",
+      "n": 262144,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "stencil-f64-n262144-s1-o0-native",
+      "kernel": "stencil",
+      "dtype": "f64",
+      "n": 262144,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "stencil-f64-n1048576-s1-o0-scalar",
+      "kernel": "stencil",
+      "dtype": "f64",
+      "n": 1048576,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "stencil-f64-n1048576-s1-o0-auto",
+      "kernel": "stencil",
+      "dtype": "f64",
+      "n": 1048576,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "stencil-f64-n1048576-s1-o0-native",
+      "kernel": "stencil",
+      "dtype": "f64",
+      "n": 1048576,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "stencil-f64-n4194304-s1-o0-scalar",
+      "kernel": "stencil",
+      "dtype": "f64",
+      "n": 4194304,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "stencil-f64-n4194304-s1-o0-auto",
+      "kernel": "stencil",
+      "dtype": "f64",
+      "n": 4194304,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "stencil-f64-n4194304-s1-o0-native",
+      "kernel": "stencil",
+      "dtype": "f64",
+      "n": 4194304,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "stencil-f64-n16777216-s1-o0-scalar",
+      "kernel": "stencil",
+      "dtype": "f64",
+      "n": 16777216,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "stencil-f64-n16777216-s1-o0-auto",
+      "kernel": "stencil",
+      "dtype": "f64",
+      "n": 16777216,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "stencil-f64-n16777216-s1-o0-native",
+      "kernel": "stencil",
+      "dtype": "f64",
+      "n": 16777216,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "baseline_locality_dtype"
+      ]
+    },
+    {
+      "id": "axpy-f32-n64-s1-o0-scalar",
+      "kernel": "axpy",
+      "dtype": "f32",
+      "n": 64,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f32-n64-s1-o0-auto",
+      "kernel": "axpy",
+      "dtype": "f32",
+      "n": 64,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f32-n64-s1-o0-native",
+      "kernel": "axpy",
+      "dtype": "f32",
+      "n": 64,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f32-n64-s1-o1-scalar",
+      "kernel": "axpy",
+      "dtype": "f32",
+      "n": 64,
+      "stride": 1,
+      "offset": 1,
+      "build": "scalar",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f32-n64-s1-o1-auto",
+      "kernel": "axpy",
+      "dtype": "f32",
+      "n": 64,
+      "stride": 1,
+      "offset": 1,
+      "build": "auto",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f32-n64-s1-o1-native",
+      "kernel": "axpy",
+      "dtype": "f32",
+      "n": 64,
+      "stride": 1,
+      "offset": 1,
+      "build": "native",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f32-n65-s1-o0-scalar",
+      "kernel": "axpy",
+      "dtype": "f32",
+      "n": 65,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f32-n65-s1-o0-auto",
+      "kernel": "axpy",
+      "dtype": "f32",
+      "n": 65,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f32-n65-s1-o0-native",
+      "kernel": "axpy",
+      "dtype": "f32",
+      "n": 65,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f32-n65-s1-o1-scalar",
+      "kernel": "axpy",
+      "dtype": "f32",
+      "n": 65,
+      "stride": 1,
+      "offset": 1,
+      "build": "scalar",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f32-n65-s1-o1-auto",
+      "kernel": "axpy",
+      "dtype": "f32",
+      "n": 65,
+      "stride": 1,
+      "offset": 1,
+      "build": "auto",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f32-n65-s1-o1-native",
+      "kernel": "axpy",
+      "dtype": "f32",
+      "n": 65,
+      "stride": 1,
+      "offset": 1,
+      "build": "native",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f32-n1024-s1-o1-scalar",
+      "kernel": "axpy",
+      "dtype": "f32",
+      "n": 1024,
+      "stride": 1,
+      "offset": 1,
+      "build": "scalar",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f32-n1024-s1-o1-auto",
+      "kernel": "axpy",
+      "dtype": "f32",
+      "n": 1024,
+      "stride": 1,
+      "offset": 1,
+      "build": "auto",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f32-n1024-s1-o1-native",
+      "kernel": "axpy",
+      "dtype": "f32",
+      "n": 1024,
+      "stride": 1,
+      "offset": 1,
+      "build": "native",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f32-n1025-s1-o0-scalar",
+      "kernel": "axpy",
+      "dtype": "f32",
+      "n": 1025,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f32-n1025-s1-o0-auto",
+      "kernel": "axpy",
+      "dtype": "f32",
+      "n": 1025,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f32-n1025-s1-o0-native",
+      "kernel": "axpy",
+      "dtype": "f32",
+      "n": 1025,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f32-n1025-s1-o1-scalar",
+      "kernel": "axpy",
+      "dtype": "f32",
+      "n": 1025,
+      "stride": 1,
+      "offset": 1,
+      "build": "scalar",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f32-n1025-s1-o1-auto",
+      "kernel": "axpy",
+      "dtype": "f32",
+      "n": 1025,
+      "stride": 1,
+      "offset": 1,
+      "build": "auto",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f32-n1025-s1-o1-native",
+      "kernel": "axpy",
+      "dtype": "f32",
+      "n": 1025,
+      "stride": 1,
+      "offset": 1,
+      "build": "native",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f32-n65536-s1-o1-scalar",
+      "kernel": "axpy",
+      "dtype": "f32",
+      "n": 65536,
+      "stride": 1,
+      "offset": 1,
+      "build": "scalar",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f32-n65536-s1-o1-auto",
+      "kernel": "axpy",
+      "dtype": "f32",
+      "n": 65536,
+      "stride": 1,
+      "offset": 1,
+      "build": "auto",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f32-n65536-s1-o1-native",
+      "kernel": "axpy",
+      "dtype": "f32",
+      "n": 65536,
+      "stride": 1,
+      "offset": 1,
+      "build": "native",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f32-n65537-s1-o0-scalar",
+      "kernel": "axpy",
+      "dtype": "f32",
+      "n": 65537,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f32-n65537-s1-o0-auto",
+      "kernel": "axpy",
+      "dtype": "f32",
+      "n": 65537,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f32-n65537-s1-o0-native",
+      "kernel": "axpy",
+      "dtype": "f32",
+      "n": 65537,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f32-n65537-s1-o1-scalar",
+      "kernel": "axpy",
+      "dtype": "f32",
+      "n": 65537,
+      "stride": 1,
+      "offset": 1,
+      "build": "scalar",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f32-n65537-s1-o1-auto",
+      "kernel": "axpy",
+      "dtype": "f32",
+      "n": 65537,
+      "stride": 1,
+      "offset": 1,
+      "build": "auto",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f32-n65537-s1-o1-native",
+      "kernel": "axpy",
+      "dtype": "f32",
+      "n": 65537,
+      "stride": 1,
+      "offset": 1,
+      "build": "native",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f64-n64-s1-o0-scalar",
+      "kernel": "axpy",
+      "dtype": "f64",
+      "n": 64,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f64-n64-s1-o0-auto",
+      "kernel": "axpy",
+      "dtype": "f64",
+      "n": 64,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f64-n64-s1-o0-native",
+      "kernel": "axpy",
+      "dtype": "f64",
+      "n": 64,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f64-n64-s1-o1-scalar",
+      "kernel": "axpy",
+      "dtype": "f64",
+      "n": 64,
+      "stride": 1,
+      "offset": 1,
+      "build": "scalar",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f64-n64-s1-o1-auto",
+      "kernel": "axpy",
+      "dtype": "f64",
+      "n": 64,
+      "stride": 1,
+      "offset": 1,
+      "build": "auto",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f64-n64-s1-o1-native",
+      "kernel": "axpy",
+      "dtype": "f64",
+      "n": 64,
+      "stride": 1,
+      "offset": 1,
+      "build": "native",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f64-n65-s1-o0-scalar",
+      "kernel": "axpy",
+      "dtype": "f64",
+      "n": 65,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f64-n65-s1-o0-auto",
+      "kernel": "axpy",
+      "dtype": "f64",
+      "n": 65,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f64-n65-s1-o0-native",
+      "kernel": "axpy",
+      "dtype": "f64",
+      "n": 65,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f64-n65-s1-o1-scalar",
+      "kernel": "axpy",
+      "dtype": "f64",
+      "n": 65,
+      "stride": 1,
+      "offset": 1,
+      "build": "scalar",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f64-n65-s1-o1-auto",
+      "kernel": "axpy",
+      "dtype": "f64",
+      "n": 65,
+      "stride": 1,
+      "offset": 1,
+      "build": "auto",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f64-n65-s1-o1-native",
+      "kernel": "axpy",
+      "dtype": "f64",
+      "n": 65,
+      "stride": 1,
+      "offset": 1,
+      "build": "native",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f64-n1024-s1-o1-scalar",
+      "kernel": "axpy",
+      "dtype": "f64",
+      "n": 1024,
+      "stride": 1,
+      "offset": 1,
+      "build": "scalar",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f64-n1024-s1-o1-auto",
+      "kernel": "axpy",
+      "dtype": "f64",
+      "n": 1024,
+      "stride": 1,
+      "offset": 1,
+      "build": "auto",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f64-n1024-s1-o1-native",
+      "kernel": "axpy",
+      "dtype": "f64",
+      "n": 1024,
+      "stride": 1,
+      "offset": 1,
+      "build": "native",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f64-n1025-s1-o0-scalar",
+      "kernel": "axpy",
+      "dtype": "f64",
+      "n": 1025,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f64-n1025-s1-o0-auto",
+      "kernel": "axpy",
+      "dtype": "f64",
+      "n": 1025,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f64-n1025-s1-o0-native",
+      "kernel": "axpy",
+      "dtype": "f64",
+      "n": 1025,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f64-n1025-s1-o1-scalar",
+      "kernel": "axpy",
+      "dtype": "f64",
+      "n": 1025,
+      "stride": 1,
+      "offset": 1,
+      "build": "scalar",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f64-n1025-s1-o1-auto",
+      "kernel": "axpy",
+      "dtype": "f64",
+      "n": 1025,
+      "stride": 1,
+      "offset": 1,
+      "build": "auto",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f64-n1025-s1-o1-native",
+      "kernel": "axpy",
+      "dtype": "f64",
+      "n": 1025,
+      "stride": 1,
+      "offset": 1,
+      "build": "native",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f64-n65536-s1-o1-scalar",
+      "kernel": "axpy",
+      "dtype": "f64",
+      "n": 65536,
+      "stride": 1,
+      "offset": 1,
+      "build": "scalar",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f64-n65536-s1-o1-auto",
+      "kernel": "axpy",
+      "dtype": "f64",
+      "n": 65536,
+      "stride": 1,
+      "offset": 1,
+      "build": "auto",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f64-n65536-s1-o1-native",
+      "kernel": "axpy",
+      "dtype": "f64",
+      "n": 65536,
+      "stride": 1,
+      "offset": 1,
+      "build": "native",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f64-n65537-s1-o0-scalar",
+      "kernel": "axpy",
+      "dtype": "f64",
+      "n": 65537,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f64-n65537-s1-o0-auto",
+      "kernel": "axpy",
+      "dtype": "f64",
+      "n": 65537,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f64-n65537-s1-o0-native",
+      "kernel": "axpy",
+      "dtype": "f64",
+      "n": 65537,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f64-n65537-s1-o1-scalar",
+      "kernel": "axpy",
+      "dtype": "f64",
+      "n": 65537,
+      "stride": 1,
+      "offset": 1,
+      "build": "scalar",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f64-n65537-s1-o1-auto",
+      "kernel": "axpy",
+      "dtype": "f64",
+      "n": 65537,
+      "stride": 1,
+      "offset": 1,
+      "build": "auto",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "axpy-f64-n65537-s1-o1-native",
+      "kernel": "axpy",
+      "dtype": "f64",
+      "n": 65537,
+      "stride": 1,
+      "offset": 1,
+      "build": "native",
+      "suites": [
+        "alignment_tail"
+      ]
+    },
+    {
+      "id": "mul-f32-n65536-s2-o0-scalar",
+      "kernel": "mul",
+      "dtype": "f32",
+      "n": 65536,
+      "stride": 2,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "stride"
+      ]
+    },
+    {
+      "id": "mul-f32-n65536-s2-o0-auto",
+      "kernel": "mul",
+      "dtype": "f32",
+      "n": 65536,
+      "stride": 2,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "stride"
+      ]
+    },
+    {
+      "id": "mul-f32-n65536-s2-o0-native",
+      "kernel": "mul",
+      "dtype": "f32",
+      "n": 65536,
+      "stride": 2,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "stride"
+      ]
+    },
+    {
+      "id": "mul-f32-n65536-s4-o0-scalar",
+      "kernel": "mul",
+      "dtype": "f32",
+      "n": 65536,
+      "stride": 4,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "stride"
+      ]
+    },
+    {
+      "id": "mul-f32-n65536-s4-o0-auto",
+      "kernel": "mul",
+      "dtype": "f32",
+      "n": 65536,
+      "stride": 4,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "stride"
+      ]
+    },
+    {
+      "id": "mul-f32-n65536-s4-o0-native",
+      "kernel": "mul",
+      "dtype": "f32",
+      "n": 65536,
+      "stride": 4,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "stride"
+      ]
+    },
+    {
+      "id": "mul-f32-n65536-s8-o0-scalar",
+      "kernel": "mul",
+      "dtype": "f32",
+      "n": 65536,
+      "stride": 8,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "stride"
+      ]
+    },
+    {
+      "id": "mul-f32-n65536-s8-o0-auto",
+      "kernel": "mul",
+      "dtype": "f32",
+      "n": 65536,
+      "stride": 8,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "stride"
+      ]
+    },
+    {
+      "id": "mul-f32-n65536-s8-o0-native",
+      "kernel": "mul",
+      "dtype": "f32",
+      "n": 65536,
+      "stride": 8,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "stride"
+      ]
+    },
+    {
+      "id": "mul-f32-n4194304-s2-o0-scalar",
+      "kernel": "mul",
+      "dtype": "f32",
+      "n": 4194304,
+      "stride": 2,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "stride"
+      ]
+    },
+    {
+      "id": "mul-f32-n4194304-s2-o0-auto",
+      "kernel": "mul",
+      "dtype": "f32",
+      "n": 4194304,
+      "stride": 2,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "stride"
+      ]
+    },
+    {
+      "id": "mul-f32-n4194304-s2-o0-native",
+      "kernel": "mul",
+      "dtype": "f32",
+      "n": 4194304,
+      "stride": 2,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "stride"
+      ]
+    },
+    {
+      "id": "mul-f32-n4194304-s4-o0-scalar",
+      "kernel": "mul",
+      "dtype": "f32",
+      "n": 4194304,
+      "stride": 4,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "stride"
+      ]
+    },
+    {
+      "id": "mul-f32-n4194304-s4-o0-auto",
+      "kernel": "mul",
+      "dtype": "f32",
+      "n": 4194304,
+      "stride": 4,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "stride"
+      ]
+    },
+    {
+      "id": "mul-f32-n4194304-s4-o0-native",
+      "kernel": "mul",
+      "dtype": "f32",
+      "n": 4194304,
+      "stride": 4,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "stride"
+      ]
+    },
+    {
+      "id": "mul-f32-n4194304-s8-o0-scalar",
+      "kernel": "mul",
+      "dtype": "f32",
+      "n": 4194304,
+      "stride": 8,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "stride"
+      ]
+    },
+    {
+      "id": "mul-f32-n4194304-s8-o0-auto",
+      "kernel": "mul",
+      "dtype": "f32",
+      "n": 4194304,
+      "stride": 8,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "stride"
+      ]
+    },
+    {
+      "id": "mul-f32-n4194304-s8-o0-native",
+      "kernel": "mul",
+      "dtype": "f32",
+      "n": 4194304,
+      "stride": 8,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "stride"
+      ]
+    },
+    {
+      "id": "dot-f32-n1024-s1-o0-scalar",
+      "kernel": "dot",
+      "dtype": "f32",
+      "n": 1024,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "negative_strict_dot"
+      ]
+    },
+    {
+      "id": "dot-f32-n1024-s1-o0-auto",
+      "kernel": "dot",
+      "dtype": "f32",
+      "n": 1024,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "negative_strict_dot"
+      ]
+    },
+    {
+      "id": "dot-f32-n1024-s1-o0-native",
+      "kernel": "dot",
+      "dtype": "f32",
+      "n": 1024,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "negative_strict_dot"
+      ]
+    },
+    {
+      "id": "dot-f32-n262144-s1-o0-scalar",
+      "kernel": "dot",
+      "dtype": "f32",
+      "n": 262144,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "negative_strict_dot"
+      ]
+    },
+    {
+      "id": "dot-f32-n262144-s1-o0-auto",
+      "kernel": "dot",
+      "dtype": "f32",
+      "n": 262144,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "negative_strict_dot"
+      ]
+    },
+    {
+      "id": "dot-f32-n262144-s1-o0-native",
+      "kernel": "dot",
+      "dtype": "f32",
+      "n": 262144,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "negative_strict_dot"
+      ]
+    },
+    {
+      "id": "dot-f32-n16777216-s1-o0-scalar",
+      "kernel": "dot",
+      "dtype": "f32",
+      "n": 16777216,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "negative_strict_dot"
+      ]
+    },
+    {
+      "id": "dot-f32-n16777216-s1-o0-auto",
+      "kernel": "dot",
+      "dtype": "f32",
+      "n": 16777216,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "negative_strict_dot"
+      ]
+    },
+    {
+      "id": "dot-f32-n16777216-s1-o0-native",
+      "kernel": "dot",
+      "dtype": "f32",
+      "n": 16777216,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "negative_strict_dot"
+      ]
+    },
+    {
+      "id": "dot-f64-n1024-s1-o0-scalar",
+      "kernel": "dot",
+      "dtype": "f64",
+      "n": 1024,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "negative_strict_dot"
+      ]
+    },
+    {
+      "id": "dot-f64-n1024-s1-o0-auto",
+      "kernel": "dot",
+      "dtype": "f64",
+      "n": 1024,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "negative_strict_dot"
+      ]
+    },
+    {
+      "id": "dot-f64-n1024-s1-o0-native",
+      "kernel": "dot",
+      "dtype": "f64",
+      "n": 1024,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "negative_strict_dot"
+      ]
+    },
+    {
+      "id": "dot-f64-n262144-s1-o0-scalar",
+      "kernel": "dot",
+      "dtype": "f64",
+      "n": 262144,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "negative_strict_dot"
+      ]
+    },
+    {
+      "id": "dot-f64-n262144-s1-o0-auto",
+      "kernel": "dot",
+      "dtype": "f64",
+      "n": 262144,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "negative_strict_dot"
+      ]
+    },
+    {
+      "id": "dot-f64-n262144-s1-o0-native",
+      "kernel": "dot",
+      "dtype": "f64",
+      "n": 262144,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "negative_strict_dot"
+      ]
+    },
+    {
+      "id": "dot-f64-n16777216-s1-o0-scalar",
+      "kernel": "dot",
+      "dtype": "f64",
+      "n": 16777216,
+      "stride": 1,
+      "offset": 0,
+      "build": "scalar",
+      "suites": [
+        "negative_strict_dot"
+      ]
+    },
+    {
+      "id": "dot-f64-n16777216-s1-o0-auto",
+      "kernel": "dot",
+      "dtype": "f64",
+      "n": 16777216,
+      "stride": 1,
+      "offset": 0,
+      "build": "auto",
+      "suites": [
+        "negative_strict_dot"
+      ]
+    },
+    {
+      "id": "dot-f64-n16777216-s1-o0-native",
+      "kernel": "dot",
+      "dtype": "f64",
+      "n": 16777216,
+      "stride": 1,
+      "offset": 0,
+      "build": "native",
+      "suites": [
+        "negative_strict_dot"
+      ]
+    }
+  ]
+}

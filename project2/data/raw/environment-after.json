@@ -1,0 +1,209 @@
+{
+  "captured_utc": "2026-10-23T20:25:05.842656+00:00",
+  "platform": "macOS-15.6.1-arm64-arm-64bit",
+  "python": "3.12.8 (v3.12.8:2dc476bcb91, Dec  3 2024, 14:43:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "probes": {
+    "os": {
+      "command": [
+        "sw_vers"
+      ],
+      "started_utc": "2026-10-23T20:25:05.490948+00:00",
+      "elapsed_wall_s": 0.00815633311867714,
+      "returncode": 0,
+      "stdout": "ProductName:\t\tmacOS\nProductVersion:\t\t15.6.1\nBuildVersion:\t\t24G90\n",
+      "stderr": ""
+    },
+    "kernel": {
+      "command": [
+        "uname",
+        "-a"
+      ],
+      "started_utc": "2026-10-23T20:25:05.499123+00:00",
+      "elapsed_wall_s": 0.0023870840668678284,
+      "returncode": 0,
+      "stdout": "Darwin Mac.lan 24.6.0 Darwin Kernel Version 24.6.0: Mon Jul 14 11:28:30 PDT 2025; root:xnu-11417.140.69~1/RELEASE_ARM64_T6030 arm64\n",
+      "stderr": ""
+    },
+    "hardware": {
+      "command": [
+        "system_profiler",
+        "SPHardwareDataType",
+        "-detailLevel",
+        "mini"
+      ],
+      "started_utc": "2026-10-23T20:25:05.501527+00:00",
+      "elapsed_wall_s": 0.08004958275705576,
+      "returncode": 0,
+      "stdout": "Hardware:\n\n    Hardware Overview:\n\n      Model Name: MacBook Pro\n      Model Identifier: Mac15,6\n      Model Number: MRX43LL/A\n      Chip: Apple M3 Pro\n      Total Number of Cores: 12 (6 performance and 6 efficiency)\n      Memory: 18 GB\n      System Firmware Version: 11881.140.96\n      OS Loader Version: 11881.140.96\n\n",
+      "stderr": ""
+    },
+    "compiler": {
+      "command": [
+        "clang",
+        "--version"
+      ],
+      "started_utc": "2026-10-23T20:25:05.581619+00:00",
+      "elapsed_wall_s": 0.01563050039112568,
+      "returncode": 0,
+      "stdout": "Apple clang version 17.0.0 (clang-1700.6.4.2)\nTarget: arm64-apple-darwin24.6.0\nThread model: posix\nInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin\n",
+      "stderr": ""
+    },
+    "hardware_parameters": {
+      "command": [
+        "/usr/sbin/sysctl",
+        "hw.memsize",
+        "hw.physicalcpu",
+        "hw.logicalcpu",
+        "hw.cachelinesize",
+        "hw.pagesize",
+        "hw.optional.neon",
+        "hw.perflevel0.name",
+        "hw.perflevel0.l1dcachesize",
+        "hw.perflevel0.l2cachesize",
+        "hw.perflevel0.cpusperl2",
+        "hw.perflevel1.name",
+        "hw.perflevel1.l1dcachesize",
+        "hw.perflevel1.l2cachesize"
+      ],
+      "started_utc": "2026-10-23T20:25:05.597269+00:00",
+      "elapsed_wall_s": 0.0025669997557997704,
+      "returncode": 0,
+      "stdout": "hw.memsize: 19327352832\nhw.physicalcpu: 12\nhw.logicalcpu: 12\nhw.cachelinesize: 128\nhw.pagesize: 16384\nhw.optional.neon: 1\nhw.perflevel0.name: Performance\nhw.perflevel0.l1dcachesize: 131072\nhw.perflevel0.l2cachesize: 16777216\nhw.perflevel0.cpusperl2: 6\nhw.perflevel1.name: Efficiency\nhw.perflevel1.l1dcachesize: 65536\nhw.perflevel1.l2cachesize: 4194304\n",
+      "stderr": ""
+    },
+    "power_policy": {
+      "command": [
+        "pmset",
+        "-g",
+        "custom"
+      ],
+      "started_utc": "2026-10-23T20:25:05.599866+00:00",
+      "elapsed_wall_s": 0.00741145946085453,
+      "returncode": 0,
+      "stdout": "Battery Power:\n Sleep On Power Button 1\n lowpowermode         0\n standby              1\n ttyskeepawake        1\n hibernatemode        3\n powernap             1\n hibernatefile        /var/vm/sleepimage\n displaysleep         0\n womp                 0\n networkoversleep     0\n sleep                1\n lessbright           1\n tcpkeepalive         1\n disksleep            10\nAC Power:\n Sleep On Power Button 1\n lowpowermode         0\n standby              1\n ttyskeepawake        1\n hibernatemode        3\n powernap             1\n hibernatefile        /var/vm/sleepimage\n displaysleep         0\n womp                 1\n networkoversleep     0\n sleep                0\n tcpkeepalive         1\n disksleep            10\n",
+      "stderr": ""
+    },
+    "battery": {
+      "command": [
+        "pmset",
+        "-g",
+        "batt"
+      ],
+      "started_utc": "2026-10-23T20:25:05.607294+00:00",
+      "elapsed_wall_s": 0.007135041989386082,
+      "returncode": 0,
+      "stdout": "Now drawing from 'AC Power'\n -InternalBattery-0 (id=6946915)\t100%; charged; 0:00 remaining present: true\n",
+      "stderr": ""
+    },
+    "disk_activity": {
+      "command": [
+        "/usr/sbin/iostat",
+        "-d",
+        "-c",
+        "1"
+      ],
+      "started_utc": "2026-10-23T20:25:05.614470+00:00",
+      "elapsed_wall_s": 0.0035292496904730797,
+      "returncode": 0,
+      "stdout": "              disk0 \n    KB/t  tps  MB/s \n   14.22   78  1.08 \n",
+      "stderr": ""
+    },
+    "vm": {
+      "command": [
+        "vm_stat"
+      ],
+      "started_utc": "2026-10-23T20:25:05.618026+00:00",
+      "elapsed_wall_s": 0.0022682081907987595,
+      "returncode": 0,
+      "stdout": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                               22565.\nPages active:                            247654.\nPages inactive:                          244332.\nPages speculative:                         2290.\nPages throttled:                              0.\nPages wired down:                        169409.\nPages purgeable:                            535.\n\"Translation faults\":               13598049279.\nPages copy-on-write:                 1613154867.\nPages zero filled:                   6749089250.\nPages reactivated:                    639895380.\nPages purged:                         277901439.\nFile-backed pages:                       232935.\nAnonymous pages:                         261341.\nPages stored in compressor:             1686458.\nPages occupied by compressor:            439845.\nDecompressions:                       528536020.\nCompressions:                         671818353.\nPageins:                              185459965.\nPageouts:                               3882078.\nSwapins:                                1079814.\nSwapouts:                               1657898.\n",
+      "stderr": ""
+    },
+    "disk_space": {
+      "command": [
+        "df",
+        "-h",
+        "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs"
+      ],
+      "started_utc": "2026-10-23T20:25:05.620309+00:00",
+      "elapsed_wall_s": 0.0025986656546592712,
+      "returncode": 0,
+      "stdout": "Filesystem      Size    Used   Avail Capacity iused ifree %iused  Mounted on\n/dev/disk3s5   926Gi   136Gi   758Gi    16%    1.9M  7.9G    0%   /System/Volumes/Data\n",
+      "stderr": ""
+    },
+    "xcode": {
+      "command": [
+        "xcodebuild",
+        "-version"
+      ],
+      "started_utc": "2026-10-23T20:25:05.622918+00:00",
+      "elapsed_wall_s": 0.06043362524360418,
+      "returncode": 0,
+      "stdout": "Xcode 26.3\nBuild version 17C529\n",
+      "stderr": ""
+    },
+    "pip": {
+      "command": [
+        "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/.venv/bin/python",
+        "-m",
+        "pip",
+        "freeze"
+      ],
+      "started_utc": "2026-10-23T20:25:05.683381+00:00",
+      "elapsed_wall_s": 0.15254004206508398,
+      "returncode": 0,
+      "stdout": "contourpy==1.4.0\ncycler==0.12.1\nfonttools==4.67.0\nkiwisolver==1.5.1\nmatplotlib==3.11.2\nnumpy==2.5.4\npackaging==26.3\npandas==3.1.0\npillow==13.0.0\npyparsing==3.3.3\npython-dateutil==3.0.0\nsix==1.17.0\ntzdata==2026.5\n",
+      "stderr": ""
+    },
+    "fio": {
+      "command": [
+        "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/tools/bin/fio",
+        "--version"
+      ],
+      "started_utc": "2026-10-23T20:25:05.835949+00:00",
+      "elapsed_wall_s": 0.0058724163100123405,
+      "returncode": 0,
+      "stdout": "fio-3.43\n",
+      "stderr": ""
+    }
+  },
+  "source_sha256": {
+    "shared/common.py": "2a3461ec59a02720044bae11ee9a12c819bef156d83f4d3634b5fa453cc73e18",
+    "shared/measurement.h": "2ed1ea65334212a65f5562677307e7a413a12b363aa747b97e3d8bf68647260e",
+    "project2/src/memory.c": "ce52a18bb17485a44036eeb3b3ec7e0a88b2ac3a8534c8e4448984413bdd37b2",
+    "project2/scripts/run.py": "30e269ef3e775d22dfa1eb86c715cc333903c3eb35bfd9ca271c5a2d3f1ffeda",
+    "project2/config/plan.json": "ae0c868b96a391df79d028606c6401571282cbb303136b3d768f7f25716623f9"
+  },
+  "isolation": "No strict CPU pinning or core isolation; user-initiated QoS is a scheduler hint only.",
+  "frequency": "macOS dynamic frequency; no fixed-frequency/governor control claimed.",
+  "SMT": "12 physical / 12 logical CPUs; no additional SMT threads.",
+  "NUMA": "Single-socket unified-memory Mac; no user-controlled NUMA placement.",
+  "health": {
+    "smart_status": {
+      "passed": true,
+      "nvme": {
+        "value": 0
+      }
+    },
+    "temperature": {
+      "current": 27
+    },
+    "nvme_smart_health_information_log": {
+      "nsid": -1,
+      "critical_warning": 0,
+      "temperature": 27,
+      "available_spare": 100,
+      "available_spare_threshold": 99,
+      "percentage_used": 1,
+      "data_units_read": 80237267,
+      "data_units_written": 42131161,
+      "host_reads": 2678425144,
+      "host_writes": 1155210865,
+      "controller_busy_time": 0,
+      "power_cycles": 344,
+      "power_on_hours": 1473,
+      "unsafe_shutdowns": 25,
+      "media_errors": 0,
+      "num_err_log_entries": 0
+    }
+  }
+}

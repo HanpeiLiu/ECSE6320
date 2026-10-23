@@ -1,0 +1,212 @@
+
+/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/build/scalar-kernels.o:	file format mach-o arm64
+
+Disassembly of section __TEXT,__text:
+
+0000000000000000 <ltmp0>:
+       0: f100047f     	cmp	x3, #0x1
+       4: 54000141     	b.ne	0x2c <ltmp0+0x2c>
+       8: b4000282     	cbz	x2, 0x58 <ltmp0+0x58>
+       c: bc404421     	ldr	s1, [x1], #0x4
+      10: 1e200821     	fmul	s1, s1, s0
+      14: bd400002     	ldr	s2, [x0]
+      18: 1e222821     	fadd	s1, s1, s2
+      1c: bc004401     	str	s1, [x0], #0x4
+      20: f1000442     	subs	x2, x2, #0x1
+      24: 54ffff41     	b.ne	0xc <ltmp0+0xc>
+      28: 1400000c     	b	0x58 <ltmp0+0x58>
+      2c: b4000162     	cbz	x2, 0x58 <ltmp0+0x58>
+      30: d2800008     	mov	x8, #0x0                ; =0
+      34: d37ef469     	lsl	x9, x3, #2
+      38: bc686821     	ldr	s1, [x1, x8]
+      3c: bc686802     	ldr	s2, [x0, x8]
+      40: 1e200821     	fmul	s1, s1, s0
+      44: 1e222821     	fadd	s1, s1, s2
+      48: bc286801     	str	s1, [x0, x8]
+      4c: 8b090108     	add	x8, x8, x9
+      50: f1000442     	subs	x2, x2, #0x1
+      54: 54ffff21     	b.ne	0x38 <ltmp0+0x38>
+      58: d65f03c0     	ret
+
+000000000000005c <_mul_f32>:
+      5c: f100049f     	cmp	x4, #0x1
+      60: 54000121     	b.ne	0x84 <_mul_f32+0x28>
+      64: b4000243     	cbz	x3, 0xac <_mul_f32+0x50>
+      68: bc404420     	ldr	s0, [x1], #0x4
+      6c: bc404441     	ldr	s1, [x2], #0x4
+      70: 1e210800     	fmul	s0, s0, s1
+      74: bc004400     	str	s0, [x0], #0x4
+      78: f1000463     	subs	x3, x3, #0x1
+      7c: 54ffff61     	b.ne	0x68 <_mul_f32+0xc>
+      80: 1400000b     	b	0xac <_mul_f32+0x50>
+      84: b4000143     	cbz	x3, 0xac <_mul_f32+0x50>
+      88: d2800008     	mov	x8, #0x0                ; =0
+      8c: d37ef489     	lsl	x9, x4, #2
+      90: bc686820     	ldr	s0, [x1, x8]
+      94: bc686841     	ldr	s1, [x2, x8]
+      98: 1e210800     	fmul	s0, s0, s1
+      9c: bc286800     	str	s0, [x0, x8]
+      a0: 8b090108     	add	x8, x8, x9
+      a4: f1000463     	subs	x3, x3, #0x1
+      a8: 54ffff41     	b.ne	0x90 <_mul_f32+0x34>
+      ac: d65f03c0     	ret
+
+00000000000000b0 <_stencil_f32>:
+      b0: f100047f     	cmp	x3, #0x1
+      b4: 54000241     	b.ne	0xfc <_stencil_f32+0x4c>
+      b8: f1000c5f     	cmp	x2, #0x3
+      bc: 54000443     	b.lo	0x144 <_stencil_f32+0x94>
+      c0: bd400423     	ldr	s3, [x1, #0x4]
+      c4: 91002028     	add	x8, x1, #0x8
+      c8: 91001009     	add	x9, x0, #0x4
+      cc: d100084a     	sub	x10, x2, #0x2
+      d0: bc5f8104     	ldur	s4, [x8, #-0x8]
+      d4: 1e200884     	fmul	s4, s4, s0
+      d8: 1e210863     	fmul	s3, s3, s1
+      dc: 1e232884     	fadd	s4, s4, s3
+      e0: bc404503     	ldr	s3, [x8], #0x4
+      e4: 1e220865     	fmul	s5, s3, s2
+      e8: 1e252884     	fadd	s4, s4, s5
+      ec: bc004524     	str	s4, [x9], #0x4
+      f0: f100054a     	subs	x10, x10, #0x1
+      f4: 54fffee1     	b.ne	0xd0 <_stencil_f32+0x20>
+      f8: 14000013     	b	0x144 <_stencil_f32+0x94>
+      fc: f1000c5f     	cmp	x2, #0x3
+     100: 54000223     	b.lo	0x144 <_stencil_f32+0x94>
+     104: d37ef468     	lsl	x8, x3, #2
+     108: d1000849     	sub	x9, x2, #0x2
+     10c: d37df06a     	lsl	x10, x3, #3
+     110: bd400023     	ldr	s3, [x1]
+     114: 1e200863     	fmul	s3, s3, s0
+     118: bc6a6824     	ldr	s4, [x1, x10]
+     11c: 8b080021     	add	x1, x1, x8
+     120: bd400025     	ldr	s5, [x1]
+     124: 1e2108a5     	fmul	s5, s5, s1
+     128: 1e252863     	fadd	s3, s3, s5
+     12c: 1e220884     	fmul	s4, s4, s2
+     130: 1e242863     	fadd	s3, s3, s4
+     134: 8b080000     	add	x0, x0, x8
+     138: bd000003     	str	s3, [x0]
+     13c: f1000529     	subs	x9, x9, #0x1
+     140: 54fffe81     	b.ne	0x110 <_stencil_f32+0x60>
+     144: d65f03c0     	ret
+
+0000000000000148 <_dot_f32>:
+     148: b4000182     	cbz	x2, 0x178 <_dot_f32+0x30>
+     14c: d2800008     	mov	x8, #0x0                ; =0
+     150: d37ef469     	lsl	x9, x3, #2
+     154: 2f00e400     	movi	d0, #0000000000000000
+     158: bc686801     	ldr	s1, [x0, x8]
+     15c: bc686822     	ldr	s2, [x1, x8]
+     160: 1e220821     	fmul	s1, s1, s2
+     164: 1e212800     	fadd	s0, s0, s1
+     168: 8b090108     	add	x8, x8, x9
+     16c: f1000442     	subs	x2, x2, #0x1
+     170: 54ffff41     	b.ne	0x158 <_dot_f32+0x10>
+     174: d65f03c0     	ret
+     178: 2f00e400     	movi	d0, #0000000000000000
+     17c: d65f03c0     	ret
+
+0000000000000180 <_axpy_f64>:
+     180: f100047f     	cmp	x3, #0x1
+     184: 54000141     	b.ne	0x1ac <_axpy_f64+0x2c>
+     188: b4000282     	cbz	x2, 0x1d8 <_axpy_f64+0x58>
+     18c: fc408421     	ldr	d1, [x1], #0x8
+     190: 1e600821     	fmul	d1, d1, d0
+     194: fd400002     	ldr	d2, [x0]
+     198: 1e622821     	fadd	d1, d1, d2
+     19c: fc008401     	str	d1, [x0], #0x8
+     1a0: f1000442     	subs	x2, x2, #0x1
+     1a4: 54ffff41     	b.ne	0x18c <_axpy_f64+0xc>
+     1a8: 1400000c     	b	0x1d8 <_axpy_f64+0x58>
+     1ac: b4000162     	cbz	x2, 0x1d8 <_axpy_f64+0x58>
+     1b0: d2800008     	mov	x8, #0x0                ; =0
+     1b4: d37df069     	lsl	x9, x3, #3
+     1b8: fc686821     	ldr	d1, [x1, x8]
+     1bc: fc686802     	ldr	d2, [x0, x8]
+     1c0: 1e600821     	fmul	d1, d1, d0
+     1c4: 1e622821     	fadd	d1, d1, d2
+     1c8: fc286801     	str	d1, [x0, x8]
+     1cc: 8b090108     	add	x8, x8, x9
+     1d0: f1000442     	subs	x2, x2, #0x1
+     1d4: 54ffff21     	b.ne	0x1b8 <_axpy_f64+0x38>
+     1d8: d65f03c0     	ret
+
+00000000000001dc <_mul_f64>:
+     1dc: f100049f     	cmp	x4, #0x1
+     1e0: 54000121     	b.ne	0x204 <_mul_f64+0x28>
+     1e4: b4000243     	cbz	x3, 0x22c <_mul_f64+0x50>
+     1e8: fc408420     	ldr	d0, [x1], #0x8
+     1ec: fc408441     	ldr	d1, [x2], #0x8
+     1f0: 1e610800     	fmul	d0, d0, d1
+     1f4: fc008400     	str	d0, [x0], #0x8
+     1f8: f1000463     	subs	x3, x3, #0x1
+     1fc: 54ffff61     	b.ne	0x1e8 <_mul_f64+0xc>
+     200: 1400000b     	b	0x22c <_mul_f64+0x50>
+     204: b4000143     	cbz	x3, 0x22c <_mul_f64+0x50>
+     208: d2800008     	mov	x8, #0x0                ; =0
+     20c: d37df089     	lsl	x9, x4, #3
+     210: fc686820     	ldr	d0, [x1, x8]
+     214: fc686841     	ldr	d1, [x2, x8]
+     218: 1e610800     	fmul	d0, d0, d1
+     21c: fc286800     	str	d0, [x0, x8]
+     220: 8b090108     	add	x8, x8, x9
+     224: f1000463     	subs	x3, x3, #0x1
+     228: 54ffff41     	b.ne	0x210 <_mul_f64+0x34>
+     22c: d65f03c0     	ret
+
+0000000000000230 <_stencil_f64>:
+     230: f100047f     	cmp	x3, #0x1
+     234: 54000241     	b.ne	0x27c <_stencil_f64+0x4c>
+     238: f1000c5f     	cmp	x2, #0x3
+     23c: 54000443     	b.lo	0x2c4 <_stencil_f64+0x94>
+     240: fd400423     	ldr	d3, [x1, #0x8]
+     244: 91004028     	add	x8, x1, #0x10
+     248: 91002009     	add	x9, x0, #0x8
+     24c: d100084a     	sub	x10, x2, #0x2
+     250: fc5f0104     	ldur	d4, [x8, #-0x10]
+     254: 1e600884     	fmul	d4, d4, d0
+     258: 1e610863     	fmul	d3, d3, d1
+     25c: 1e632884     	fadd	d4, d4, d3
+     260: fc408503     	ldr	d3, [x8], #0x8
+     264: 1e620865     	fmul	d5, d3, d2
+     268: 1e652884     	fadd	d4, d4, d5
+     26c: fc008524     	str	d4, [x9], #0x8
+     270: f100054a     	subs	x10, x10, #0x1
+     274: 54fffee1     	b.ne	0x250 <_stencil_f64+0x20>
+     278: 14000013     	b	0x2c4 <_stencil_f64+0x94>
+     27c: f1000c5f     	cmp	x2, #0x3
+     280: 54000223     	b.lo	0x2c4 <_stencil_f64+0x94>
+     284: d37df068     	lsl	x8, x3, #3
+     288: d1000849     	sub	x9, x2, #0x2
+     28c: d37cec6a     	lsl	x10, x3, #4
+     290: fd400023     	ldr	d3, [x1]
+     294: 1e600863     	fmul	d3, d3, d0
+     298: fc6a6824     	ldr	d4, [x1, x10]
+     29c: 8b080021     	add	x1, x1, x8
+     2a0: fd400025     	ldr	d5, [x1]
+     2a4: 1e6108a5     	fmul	d5, d5, d1
+     2a8: 1e652863     	fadd	d3, d3, d5
+     2ac: 1e620884     	fmul	d4, d4, d2
+     2b0: 1e642863     	fadd	d3, d3, d4
+     2b4: 8b080000     	add	x0, x0, x8
+     2b8: fd000003     	str	d3, [x0]
+     2bc: f1000529     	subs	x9, x9, #0x1
+     2c0: 54fffe81     	b.ne	0x290 <_stencil_f64+0x60>
+     2c4: d65f03c0     	ret
+
+00000000000002c8 <_dot_f64>:
+     2c8: b4000182     	cbz	x2, 0x2f8 <_dot_f64+0x30>
+     2cc: d2800008     	mov	x8, #0x0                ; =0
+     2d0: d37df069     	lsl	x9, x3, #3
+     2d4: 2f00e400     	movi	d0, #0000000000000000
+     2d8: fc686801     	ldr	d1, [x0, x8]
+     2dc: fc686822     	ldr	d2, [x1, x8]
+     2e0: 1e620821     	fmul	d1, d1, d2
+     2e4: 1e612800     	fadd	d0, d0, d1
+     2e8: 8b090108     	add	x8, x8, x9
+     2ec: f1000442     	subs	x2, x2, #0x1
+     2f0: 54ffff41     	b.ne	0x2d8 <_dot_f64+0x10>
+     2f4: d65f03c0     	ret
+     2f8: 2f00e400     	movi	d0, #0000000000000000
+     2fc: d65f03c0     	ret

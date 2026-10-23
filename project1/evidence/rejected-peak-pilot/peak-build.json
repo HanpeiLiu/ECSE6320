@@ -1,0 +1,15 @@
+{
+  "command": [
+    "clang",
+    "-O3",
+    "-mcpu=native",
+    "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/peak.c",
+    "-o",
+    "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/build/peak"
+  ],
+  "started_utc": "2026-10-23T20:19:58.607306+00:00",
+  "elapsed_wall_s": 0.10177745763212442,
+  "returncode": 0,
+  "stdout": "",
+  "stderr": ""
+}

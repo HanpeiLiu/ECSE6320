@@ -1,0 +1,8 @@
+{
+  "case_id": "write-b4096-q1-range1073741824-direct1-r0",
+  "trial": 0,
+  "reserved_write_bytes": 2147483648,
+  "started_utc": "2026-10-23T20:28:19.969963+00:00",
+  "actual_write_bytes": 234901504,
+  "completed_utc": "2026-10-23T20:28:21.256635+00:00"
+}

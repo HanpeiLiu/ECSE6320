@@ -1,0 +1,23 @@
+{
+  "vector_fma_instructions": 16,
+  "expected": 16,
+  "accepted": true,
+  "excerpt": [
+    "100000798: 4f9812b9    \tfmla.4s\tv25, v21, v24[0]",
+    "10000079c: 4f9812b7    \tfmla.4s\tv23, v21, v24[0]",
+    "1000007a0: 4f9812b6    \tfmla.4s\tv22, v21, v24[0]",
+    "1000007a4: 4f9812b4    \tfmla.4s\tv20, v21, v24[0]",
+    "1000007a8: 4f9812b3    \tfmla.4s\tv19, v21, v24[0]",
+    "1000007ac: 4f9812b2    \tfmla.4s\tv18, v21, v24[0]",
+    "1000007b0: 4f9812b1    \tfmla.4s\tv17, v21, v24[0]",
+    "1000007b4: 4f9812b0    \tfmla.4s\tv16, v21, v24[0]",
+    "1000007b8: 4f9812a7    \tfmla.4s\tv7, v21, v24[0]",
+    "1000007bc: 4f9812a6    \tfmla.4s\tv6, v21, v24[0]",
+    "1000007c0: 4f9812a5    \tfmla.4s\tv5, v21, v24[0]",
+    "1000007c4: 4f9812a3    \tfmla.4s\tv3, v21, v24[0]",
+    "1000007c8: 4f9812a2    \tfmla.4s\tv2, v21, v24[0]",
+    "1000007cc: 4f9812a1    \tfmla.4s\tv1, v21, v24[0]",
+    "1000007d0: 4f9812a0    \tfmla.4s\tv0, v21, v24[0]",
+    "1000007d4: 4f9812a4    \tfmla.4s\tv4, v21, v24[0]"
+  ]
+}

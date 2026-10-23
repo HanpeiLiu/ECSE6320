@@ -1,0 +1,8 @@
+{
+  "case_id": "randwrite-b65536-q1-range1073741824-direct1-r0",
+  "trial": 2,
+  "reserved_write_bytes": 2147483648,
+  "started_utc": "2026-10-23T20:30:31.562712+00:00",
+  "actual_write_bytes": 1999110144,
+  "completed_utc": "2026-10-23T20:30:32.977243+00:00"
+}

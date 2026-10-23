@@ -1,0 +1,14 @@
+{
+  "rows": 1200,
+  "cases": 240,
+  "trials": 5,
+  "all_correct": true,
+  "all_cycles_available": true,
+  "lowest_p_core_fraction": 0.39329945344546113,
+  "rows_below_90pct_pcore": 2,
+  "min_thread_cpu_to_wall": 0.9391760706168272,
+  "effective_ghz_min": 2.9550548203965668,
+  "effective_ghz_max": 4.040911455470015,
+  "empirical_compute_ceiling_gflops": 122.121965,
+  "copy_bandwidth_GB_s": 107.1
+}

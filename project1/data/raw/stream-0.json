@@ -1,0 +1,10 @@
+{
+  "command": [
+    "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/tools/bin/stream"
+  ],
+  "started_utc": "2026-10-23T20:21:00.175492+00:00",
+  "elapsed_wall_s": 0.10363895818591118,
+  "returncode": 0,
+  "stdout": "-------------------------------------------------------------\nSTREAM version $Revision: 5.10 $\n-------------------------------------------------------------\nThis system uses 8 bytes per array element.\n-------------------------------------------------------------\nArray size = 10000000 (elements), Offset = 0 (elements)\nMemory per array = 76.3 MiB (= 0.1 GiB).\nTotal memory required = 228.9 MiB (= 0.2 GiB).\nEach kernel will be executed 10 times.\n The *best* time for each kernel (excluding the first iteration)\n will be used to compute the reported bandwidth.\n-------------------------------------------------------------\nYour clock granularity/precision appears to be 1 microseconds.\nEach test below will take on the order of 2459 microseconds.\n   (= 2459 clock ticks)\nIncrease the size of the arrays if this shows that\nyou are not getting at least 20 clock ticks per test.\n-------------------------------------------------------------\nWARNING -- The above is only a rough guideline.\nFor best results, please be sure you know the\nprecision of your system timer.\n-------------------------------------------------------------\nFunction    Best Rate MB/s  Avg time     Min time     Max time\nCopy:          107031.7     0.001523     0.001495     0.001609\nScale:         100072.9     0.001627     0.001599     0.001686\nAdd:           115651.8     0.002117     0.002075     0.002228\nTriad:         112889.2     0.002172     0.002126     0.002285\n-------------------------------------------------------------\nSolution Validates: avg error less than 1.000000e-13 on all three arrays\n-------------------------------------------------------------\n",
+  "stderr": ""
+}

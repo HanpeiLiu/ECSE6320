@@ -1,0 +1,20 @@
+/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/negative_dot.c:11:32: remark: loop not vectorized: read with atomic ordering or volatile read [-Rpass-analysis=loop-vectorize]
+   11 |     for(size_t i=0;i<n;i++)sum=sum+x[i]*y[i];
+      |                                ^
+/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/negative_dot.c:11:5: remark: loop not vectorized [-Rpass-missed=loop-vectorize]
+   11 |     for(size_t i=0;i<n;i++)sum=sum+x[i]*y[i];
+      |     ^
+/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/negative_dot.c:19:5: remark: the cost-model indicates that interleaving is not beneficial [-Rpass-analysis=loop-vectorize]
+   19 |     for(size_t i=0;i<n;i++){x[i]=(float)((int)(i%17)-8)/16;y[i]=(float)((int)(i%13)-6)/16;}
+      |     ^
+/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/negative_dot.c:19:5: remark: vectorized loop (vectorization width: 4, interleaved count: 1) [-Rpass=loop-vectorize]
+/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/negative_dot.c:20:17: remark: vectorized loop (vectorization width: 4, interleaved count: 4) [-Rpass=loop-vectorize]
+   20 |     float ref=0;for(size_t i=0;i<n;i++)ref=ref+x[i]*y[i];
+      |                 ^
+/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/negative_dot.c:25:75: remark: loop not vectorized: call instruction cannot be vectorized [-Rpass-analysis=loop-vectorize]
+   25 |     cpu_count a=cpu_snapshot();t=wall_ns();for(size_t j=0;j<reps;j++)sink=observable_dot(x,y,n);
+      |                                                                           ^
+/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/negative_dot.c:25:44: remark: loop not vectorized: instruction cannot be vectorized [-Rpass-analysis=loop-vectorize]
+   25 |     cpu_count a=cpu_snapshot();t=wall_ns();for(size_t j=0;j<reps;j++)sink=observable_dot(x,y,n);
+      |                                            ^
+/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/src/negative_dot.c:25:44: remark: loop not vectorized [-Rpass-missed=loop-vectorize]

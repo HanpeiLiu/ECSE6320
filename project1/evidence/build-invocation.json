@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/.venv/bin/python",
+    "/Users/hanliu/Desktop/Hanpei/RPI Class/ecse6320acs/project1/scripts/build.py"
+  ],
+  "started_utc": "2026-10-23T20:19:58.014653+00:00",
+  "elapsed_wall_s": 0.5922299167141318,
+  "returncode": 0,
+  "stdout": "Project 1: scalar, auto, native built; compiler reports and disassembly saved.\n",
+  "stderr": ""
+}
