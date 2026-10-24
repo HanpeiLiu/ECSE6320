@@ -1,6 +1,6 @@
 from pathlib import Path
 import json,subprocess,sys
-ROOT=Path(__file__).resolve().parents[2];sys.path.insert(0,str(ROOT/'shared'))
+ROOT=Path(__file__).resolve().parents[2];sys.path.insert(0,str(Path(__file__).resolve().parent))
 from common import command,write_json
 P=ROOT/'project1';(P/'build').mkdir(exist_ok=True);(P/'evidence').mkdir(exist_ok=True)
 base=['-O3','-ffp-contract=off','-g','-Wall','-Wextra']

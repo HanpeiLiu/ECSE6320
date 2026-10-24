@@ -1,7 +1,7 @@
 from pathlib import Path
 import itertools,json,random,sys
-ROOT=Path(__file__).resolve().parents[2];sys.path.insert(0,str(ROOT/'shared'))
-from common import command,write_json,environment,now,source_notice
+ROOT=Path(__file__).resolve().parents[2];sys.path.insert(0,str(Path(__file__).resolve().parent))
+from common import command,write_json,environment,now
 P=ROOT/'project2';TRIALS=5;DURATION=.12
 def make_plan():
     cases={}
@@ -28,6 +28,7 @@ def args_for(c,duration=DURATION,seed=6320):
     return [P/'build/memory','traffic',str(c['bytes']),str(c['spacing']),c['pattern'],str(c['readpct']),str(c['threads']),str(duration),str(seed),str(c['probe_bytes'])]
 
 def main():
+    (P/'build').mkdir(exist_ok=True)
     r=command(['clang','-O3','-mcpu=native','-ffp-contract=off','-g','-Wall','-Wextra',P/'src/memory.c','-o',P/'build/memory'])
     write_json(P/'evidence/build.json',r)
     if r['returncode']:raise RuntimeError(r)
@@ -36,7 +37,6 @@ def main():
         if r['returncode']:raise RuntimeError(r)
     cases=make_plan();write_json(P/'config/plan.json',dict(created_utc=now(),trials=TRIALS,target_seconds=DURATION,seed=6320,cases=cases))
     write_json(P/'data/raw/environment-before.json',environment('project2'))
-    (P/'AI_USE.md').write_text(source_notice('project2'))
     rawdir=P/'data/raw/runs';rawdir.mkdir(exist_ok=True);rows=[]
     for trial in range(TRIALS):
         order=cases.copy();random.Random(16320+trial).shuffle(order)

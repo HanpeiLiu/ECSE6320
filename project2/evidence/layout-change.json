@@ -1,0 +1,19 @@
+{
+  "changes": [
+    {
+      "file": "project2/src/memory.c",
+      "original_sha256": "ce52a18bb17485a44036eeb3b3ec7e0a88b2ac3a8534c8e4448984413bdd37b2",
+      "change": "Only measurement.h include path changed; measured original source preserved in evidence/collected-source/."
+    },
+    {
+      "file": "project2/src/memory_variants.c",
+      "original_sha256": "4d55e00f33ebe3253c6e31403c74f696b6fc2775c88691d0eea917f3c22ee8b3",
+      "change": "Only measurement.h include path changed; measured original source preserved in evidence/collected-source/."
+    }
+  ],
+  "raw_records": "Historical commands, paths, timestamps and measured values are retained unchanged.",
+  "post_relocation_validation": {
+    "native_compile_passed": true,
+    "checks": "Cycle uniqueness, mix schedule and traffic-reference selftests passed."
+  }
+}

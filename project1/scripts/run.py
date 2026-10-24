@@ -1,7 +1,7 @@
 from pathlib import Path
 import itertools,json,random,sys
-ROOT=Path(__file__).resolve().parents[2];sys.path.insert(0,str(ROOT/'shared'))
-from common import command,write_json,environment,power_state,now,source_notice
+ROOT=Path(__file__).resolve().parents[2];sys.path.insert(0,str(Path(__file__).resolve().parent))
+from common import command,write_json,environment,power_state,now
 P=ROOT/'project1';TRIALS=5
 def make_plan():
     cases={}
@@ -25,7 +25,6 @@ def main():
     (P/'evidence/peak-disassembly.txt').write_text(dis['stdout'])
     cases=make_plan();write_json(P/'config/plan.json',dict(created_utc=now(),trials=TRIALS,target_seconds=.03,seed=6320,cases=cases))
     write_json(P/'data/raw/environment-before.json',environment('project1'))
-    (P/'AI_USE.md').write_text(source_notice('project1'))
     rows=[]
     rawdir=P/'data/raw/runs';rawdir.mkdir(exist_ok=True)
     # Reproducible random order within each trial keeps builds interleaved.
@@ -45,7 +44,7 @@ def main():
             write_json(path,r)
             if r['returncode']:raise RuntimeError(f'Case failed: {path}')
             if idx%40==0:print(f'Project 1 trial {trial+1}/{TRIALS}: {idx+1}/{len(cases)}',flush=True)
-    for kind,args in [('stream',[ROOT/'tools/bin/stream']),('peak',[P/'build/peak','50000000','0.5','0.0002'])]:
+    for kind,args in [('stream',[ROOT/'project1/.tools/bin/stream']),('peak',[P/'build/peak','50000000','0.5','0.0002'])]:
         for trial in range(TRIALS):
             r=command(args,timeout=60);write_json(P/f'data/raw/{kind}-{trial}.json',r)
             if r['returncode']:raise RuntimeError(r)

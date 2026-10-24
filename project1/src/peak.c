@@ -1,7 +1,7 @@
 #include <arm_neon.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include "../../shared/measurement.h"
+#include "measurement.h"
 /* Independent register-resident FMA chains: an empirical compute ceiling estimate. */
 static volatile float sink;
 int main(int argc,char **argv){

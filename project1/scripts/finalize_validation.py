@@ -1,7 +1,7 @@
 """Validate the corrected compute ceiling and boundary/access-pattern correctness."""
 from pathlib import Path
 import itertools,json,re,sys
-ROOT=Path(__file__).resolve().parents[2];sys.path.insert(0,str(ROOT/'shared'))
+ROOT=Path(__file__).resolve().parents[2];sys.path.insert(0,str(Path(__file__).resolve().parent))
 from common import command,write_json
 P=ROOT/'project1'
 r=command(['clang','-O3','-mcpu=native',P/'src/peak.c','-o',P/'build/peak']);write_json(P/'evidence/peak-build.json',r)

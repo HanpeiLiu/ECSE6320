@@ -1,5 +1,5 @@
 #include "kernels.h"
-#include "../../shared/measurement.h"
+#include "measurement.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>

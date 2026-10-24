@@ -1,0 +1,14 @@
+{
+  "tools": [
+    {
+      "name": "STREAM",
+      "version": "5.10",
+      "source": "https://github.com/jeffhammond/STREAM",
+      "commit": "6703f7504a38a8da96b353cadafa64d3c2d7a2d3",
+      "commands": [
+        "clang -O3 -mcpu=native -DSTREAM_ARRAY_SIZE=10000000 -DNTIMES=10 stream.c -o <project>/tools/bin/stream"
+      ],
+      "binary": "bin/stream"
+    }
+  ]
+}

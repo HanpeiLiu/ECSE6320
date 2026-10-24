@@ -1,0 +1,27 @@
+{
+  "tools": [
+    {
+      "name": "fio",
+      "version": "3.43",
+      "source": "https://github.com/axboe/fio",
+      "tag": "fio-3.43",
+      "commit": "d2dcd7e053d1902d2420f151c83990e6acdd9f8c",
+      "commands": [
+        "./configure --prefix=../..",
+        "make -j4"
+      ],
+      "binary": "bin/fio"
+    },
+    {
+      "name": "smartctl",
+      "version": "7.5",
+      "source": "https://downloads.sourceforge.net/project/smartmontools/smartmontools/7.5/smartmontools-7.5.tar.gz",
+      "sha256": "690b83ca331378da9ea0d9d61008c4b22dde391387b9bbad7f29387f2595f76e",
+      "commands": [
+        "./configure --prefix=<project>/tools --without-initscriptdir --without-update-smart-drivedb",
+        "make -j4 smartctl"
+      ],
+      "binary": "bin/smartctl"
+    }
+  ]
+}

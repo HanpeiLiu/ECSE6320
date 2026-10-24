@@ -1,6 +1,6 @@
 /* Deliberate negative control: observable volatile accumulator prevents SIMD reduction.
    This changes semantics/cost; it is not an optimization recommendation. */
-#include "../../shared/measurement.h"
+#include "measurement.h"
 #include <stdio.h>
 #include <stdlib.h>
 #ifndef BUILD_NAME

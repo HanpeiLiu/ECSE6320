@@ -1,6 +1,6 @@
 from pathlib import Path
 import itertools,sys,json,plistlib
-ROOT=Path(__file__).resolve().parents[2];sys.path.insert(0,str(ROOT/'shared'))
+ROOT=Path(__file__).resolve().parents[2];sys.path.insert(0,str(Path(__file__).resolve().parent))
 from common import write_json,now
 from profile_counters import capture
 P=ROOT/'project2'

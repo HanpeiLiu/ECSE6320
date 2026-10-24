@@ -1,6 +1,7 @@
 {
   "collection_source_path": "project2/src/memory.c",
-  "preserved_source_path": "project2/src/memory_variants.c",
+  "preserved_source_path": "project2/evidence/collected-source/memory_variants.c",
   "sha256": "4d55e00f33ebe3253c6e31403c74f696b6fc2775c88691d0eea917f3c22ee8b3",
-  "note": "After collecting follow-up data, the variant source was separated from the unchanged primary benchmark for reproducibility. Original build commands are retained."
+  "note": "After collecting follow-up data, the variant source was separated from the unchanged primary benchmark for reproducibility. Original build commands are retained. Later directory cleanup changed only the measurement-header include path in the current source; this snapshot retains the measured source bytes.",
+  "current_source_path": "project2/src/memory_variants.c"
 }

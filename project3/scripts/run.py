@@ -1,9 +1,9 @@
 """Bounded regular-file SSD experiments. Never accepts an arbitrary device path."""
 from pathlib import Path
 import itertools,json,math,os,random,shutil,stat,sys,time,uuid
-ROOT=Path(__file__).resolve().parents[2];sys.path.insert(0,str(ROOT/'shared'))
-from common import command,write_json,environment,now,health,source_notice
-P=ROOT/'project3';WORK=P/'work';DATA=WORK/'ssd-test.bin';FIO=ROOT/'tools/bin/fio'
+ROOT=Path(__file__).resolve().parents[2];sys.path.insert(0,str(Path(__file__).resolve().parent))
+from common import command,write_json,environment,now,health
+P=ROOT/'project3';WORK=P/'work';DATA=WORK/'ssd-test.bin';FIO=ROOT/'project3/.tools/bin/fio'
 GIB=1024**3;TRIALS=3;WRITE_BUDGET=104*GIB
 
 def own_workspace():
@@ -87,7 +87,6 @@ def make_plan():
 def main():
     own_workspace()
     for f in ['runs','ledger']:(P/'data/raw'/f).mkdir(exist_ok=True)
-    (P/'AI_USE.md').write_text(source_notice('project3'))
     cases=make_plan()
     # Upper bound includes all pure-write/mixed trials plus one-time initialization and validation.
     cap=sum(c['io_bytes']*TRIALS for c in cases if c['rw'] not in ['read','randread'])+GIB+64*1024**2
@@ -97,7 +96,7 @@ def main():
     write_json(P/'data/raw/environment-before.json',environment('project3'))
     # Direct write/read CRC validation on a separate 64MiB disposable file.
     verify=dict(id='direct-crc32c-verify',rw='write',bs=65536,qd=8,io_bytes=64*1024**2,runtime='20s')
-    run_fio(verify,0,extra=dict(allow_file_create='1',verify='crc32c',do_verify='1',verify_fatal='1',end_fsync='1'),file=WORK/'verify.bin',size=64*1024**2,prep=True)
+    run_fio(verify,0,extra=dict(allow_file_create='1',verify='crc32c',do_verify='1',verify_fatal='1',verify_state_save='0',end_fsync='1'),file=WORK/'verify.bin',size=64*1024**2,prep=True)
     init=dict(id='initialize-incompressible-file',rw='write',bs=1048576,qd=8,io_bytes=GIB,runtime='30s')
     run_fio(init,0,extra=dict(allow_file_create='1',end_fsync='1'),prep=True)
     if DATA.stat().st_size!=GIB:raise RuntimeError('Test file size differs from plan.')

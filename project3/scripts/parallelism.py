@@ -2,7 +2,7 @@
 import json,random,sys
 from pathlib import Path
 from run import P,GIB,TRIALS,run_fio
-ROOT=Path(__file__).resolve().parents[2];sys.path.insert(0,str(ROOT/'shared'))
+ROOT=Path(__file__).resolve().parents[2];sys.path.insert(0,str(Path(__file__).resolve().parent))
 from common import write_json,now
 cases=[]
 for jobs in [2,4,8,12]:

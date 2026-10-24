@@ -1,7 +1,7 @@
 """Audit planned coverage, raw correctness, derived data, PMU exports and integrity."""
 from pathlib import Path
 import csv,gzip,hashlib,json,math,sys,tarfile
-ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'shared'))
+ROOT=Path(__file__).resolve().parents[2];sys.path.insert(0,str(Path(__file__).resolve().parent))
 from common import now,write_json
 checks=[]
 def test(name,condition,detail=''):
@@ -34,8 +34,12 @@ def main():
     test('P2: chase latency formula',all(math.isclose(float(r['latency_ns']),float(r['elapsed_ns'])/float(r['loads']),rel_tol=2e-7) for r in p2 if r['mode']=='chase'))
     test('P2: useful traffic/probe formulas',all(math.isclose(float(r['useful_gib_per_s']),float(r['traffic_ops'])*8/float(r['elapsed_ns'])*1e9/2**30,rel_tol=2e-7) and math.isclose(float(r['probe_latency_ns']),float(r['elapsed_ns'])/float(r['probe_loads']),rel_tol=2e-7) and int(float(r['traffic_ops']))==int(float(r['traffic_reads']))+int(float(r['traffic_writes'])) for r in p2 if r['mode']=='traffic'))
     provenance=load('project2/evidence/followup-source-provenance.json')
-    test('P2: preserved follow-up source hash',hashlib.sha256((ROOT/provenance['preserved_source_path']).read_bytes()).hexdigest()==provenance['sha256'])
-    test('P2: unchanged primary source', (ROOT/'project2/src/memory.c').read_bytes()==(ROOT/'project2/evidence/initial-memory-source.c').read_bytes())
+    test('P2: preserved follow-up source hash',hashlib.sha256((ROOT/'project2/evidence/collected-source/memory_variants.c').read_bytes()).hexdigest()==provenance['sha256'])
+    for n in [1,2]:
+        for entry in load(f'project{n}/evidence/layout-change.json')['changes']:
+            old=ROOT/f'project{n}/evidence/collected-source'/Path(entry['file']).name
+            new=ROOT/entry['file']
+            test(entry['file']+': include-path-only relocation',hashlib.sha256(old.read_bytes()).hexdigest()==entry['original_sha256'] and old.read_text().replace('../../shared/measurement.h','measurement.h')==new.read_text())
     # Required P1 coverage plus independent boundary and negative controls.
     p=load('project1/config/plan.json');cs=p['cases']
     test('P1: three kernels, types, builds',{c['kernel'] for c in cs}>={'axpy','mul','stencil'} and {c['dtype'] for c in cs}=={'f32','f64'} and {c['build'] for c in cs}=={'scalar','auto','native'})
@@ -96,29 +100,25 @@ def main():
     test('P3: six tail records',len(rows('project3/data/processed/tail_counts.csv'))==6)
     test('P3: block-size and access matrix',all(any(c['bs']==b and c['rw']==r and 'block_pattern' in c['suites'] for c in plans) for b in [4096,16384,32768,65536,131072,262144] for r in ['read','write','randread','randwrite']))
     for suffix in ['before','after','final']:test('P3: environment-'+suffix,(ROOT/f'project3/data/raw/environment-{suffix}.json').exists())
+    for name in ['README.md','AI_USE.md','REPORT.pdf']:
+        test('Unified document: '+name,(ROOT/name).exists())
     for n in [1,2,3]:
-        for f in ['README.md','REPORT.md','HYPOTHESES.md','AI_USE.md']:test(f'project{n}: '+f,(ROOT/f'project{n}'/f).exists())
-        for f in (ROOT/f'project{n}/figures').glob('*.png'):test(str(f.relative_to(ROOT))+': PNG',f.read_bytes()[:8]==b'\x89PNG\r\n\x1a\n')
-    checklist=rows('REQUIREMENTS.csv')
-    test('Requirement checklist: 52 entries',len(checklist)==52)
-    for r in checklist:
-        for evidence in r['evidence'].split('; '):
-            if '*' in evidence or evidence=='local .git':continue
-            test(r['id']+': evidence '+evidence,(ROOT/evidence).exists())
-    # Integrity manifest excludes disposable files, installed tools, generated audit itself, git internals.
-    include=[]
-    for base in ['project1','project2','project3','shared']:
-        include.extend(p for p in (ROOT/base).rglob('*') if p.is_file() and not any(s in p.relative_to(ROOT).parts for s in ['build','work','__pycache__']))
-    include.extend(p for p in ROOT.iterdir() if p.is_file() and p.name not in ['SHA256SUMS','AUDIT.json','.DS_Store'] and not p.name.endswith('.state'))
-    include.extend(ROOT/'tools'/f for f in ['manifest.json','bootstrap.py','rebuild.py','README.txt'])
+        for f in (ROOT/f'project{n}/figures').glob('*.png'):
+            test(str(f.relative_to(ROOT))+': PNG',f.read_bytes()[:8]==b'\x89PNG\r\n\x1a\n')
     manifest=[]
-    for p in sorted(set(include)):
-        with p.open('rb') as f:digest=hashlib.file_digest(f,'sha256').hexdigest()
-        manifest.append(f'{digest}  {p.relative_to(ROOT)}')
-    (ROOT/'SHA256SUMS').write_text('\n'.join(manifest)+'\n')
+    for n in [1,2,3]:
+        paths=[p for p in (ROOT/f'project{n}').rglob('*') if p.is_file() and not any(v in p.parts for v in ['.tools','build','work','__pycache__','.cache']) and p.name not in ['SHA256SUMS','audit.json']]
+        if n==1:paths += [ROOT/f for f in ['README.md','AI_USE.md','REPORT.pdf','.gitignore']]
+        hashes=[]
+        for p in sorted(paths):
+            with p.open('rb') as f:digest=hashlib.file_digest(f,'sha256').hexdigest()
+            hashes.append(f'{digest}  {p.relative_to(ROOT)}')
+        (ROOT/f'project{n}/evidence').mkdir(exist_ok=True)
+        (ROOT/f'project{n}/evidence/SHA256SUMS').write_text('\n'.join(hashes)+'\n')
+        manifest.extend(hashes)
     failed=[c for c in checks if not c['passed']]
-    result=dict(captured_utc=now(),passed=not failed,checks=len(checks),failed=failed,details=checks,integrity_files=len(manifest),project1_primary=1200,project1_extra_negative=30,project1_boundary_checks=324,project2_primary=355,project2_extra_timing=33,project2_PMU_captures=42,project3_performance_runs=141,project3_direction_rows=147,project3_payload_write_bytes=writes,external_submission='GitHub remote not configured; upload pending user destination')
-    write_json(ROOT/'AUDIT.json',result)
+    result=dict(captured_utc=now(),passed=not failed,checks=len(checks),failed=failed,integrity_files=len(manifest),project1_primary=1200,project1_extra_negative=30,project1_boundary_checks=324,project2_primary=355,project2_extra_timing=33,project2_PMU_captures=42,project3_performance_runs=141,project3_direction_rows=147,project3_payload_write_bytes=writes,external_submission='GitHub remote not configured; upload pending user destination')
+    write_json(ROOT/'project1/evidence/audit.json',result)
     print(json.dumps({k:v for k,v in result.items() if k!='details'},indent=2))
     if failed:sys.exit(1)
 if __name__=='__main__':main()

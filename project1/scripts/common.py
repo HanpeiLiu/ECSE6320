@@ -1,7 +1,7 @@
 """Shared provenance, subprocess capture, statistics, and figure conventions."""
 from pathlib import Path
 import datetime, hashlib, json, os, platform, subprocess, sys, time
-ROOT=Path(__file__).resolve().parents[1]
+ROOT=Path(__file__).resolve().parents[2]
 
 def now():
     return datetime.datetime.now(datetime.timezone.utc).isoformat()
@@ -27,7 +27,7 @@ def power_state():
     return command(['/usr/bin/pmset','-g','batt'],timeout=10)['stdout'].strip()
 
 def health():
-    r=command([ROOT/'tools/bin/smartctl','-H','-A','-j','/dev/disk0'],timeout=20)
+    r=command([ROOT/'project3/.tools/bin/smartctl','-H','-A','-j','/dev/disk0'],timeout=20)
     try:
         d=json.loads(r['stdout'])
         return {k:d[k] for k in ['smart_status','temperature','nvme_smart_health_information_log'] if k in d}
@@ -49,10 +49,10 @@ def environment(project):
         'vm':['vm_stat'],'disk_space':['df','-h',str(ROOT)],
         'xcode':['xcodebuild','-version'],
         'pip':[sys.executable,'-m','pip','freeze'],
-        'fio':[ROOT/'tools/bin/fio','--version'],
+        'fio':[ROOT/'project3/.tools/bin/fio','--version'],
     }.items()}
     hashes={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest()
-            for folder in ['shared',project+'/src',project+'/scripts',project+'/config']
+            for folder in [project+'/src',project+'/scripts',project+'/config']
             for p in (ROOT/folder).rglob('*') if p.is_file() and '__pycache__' not in p.parts}
     return dict(captured_utc=now(),platform=platform.platform(),python=sys.version,
                 probes=probes,source_sha256=hashes,
@@ -63,16 +63,13 @@ def environment(project):
                 health=health())
 
 def plotting():
-    os.environ.setdefault('MPLCONFIGDIR',str(ROOT/'.matplotlib-cache'))
+    os.environ.setdefault('MPLCONFIGDIR',str(Path(__file__).resolve().parents[1]/'.cache/matplotlib'))
     import matplotlib
     matplotlib.use('Agg')
     import matplotlib.pyplot as plt
     plt.rcParams.update({'figure.dpi':130,'savefig.dpi':180,'font.size':10,
                          'axes.grid':True,'grid.alpha':.25,'figure.constrained_layout.use':True})
     return plt
-
-def source_notice(project):
-    return f'''# AI-use and validation note\n\nOpenAI Codex generated and revised benchmark code, automation, plots, and this report.\nThe agent ran reference/sanity checks and inspected real compiler output and measurement records.\nNo result was invented to replace an unavailable hardware facility.\nThe student has not yet independently reviewed these artifacts; that review and explanation remain required before submission.\nInstallation checks and pilot runs are distinguished from final experiments.\nSee `{project}/data/raw/` for exact commands, raw outputs, failures, and environment records.\n'''
 
 def markdown_table(frame):
     import math

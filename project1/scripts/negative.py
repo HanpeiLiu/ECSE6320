@@ -1,7 +1,7 @@
 """Supplementary no-vectorization control; ordinary strict dot partially vectorized."""
 from pathlib import Path
 import itertools,json,random,re,sys
-ROOT=Path(__file__).resolve().parents[2];sys.path.insert(0,str(ROOT/'shared'))
+ROOT=Path(__file__).resolve().parents[2];sys.path.insert(0,str(Path(__file__).resolve().parent))
 from common import command,write_json,now
 P=ROOT/'project1';builds={'scalar':['-fno-vectorize','-fno-slp-vectorize'],'auto':[],'native':['-mcpu=native']}
 records=[];verification={}

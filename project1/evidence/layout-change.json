@@ -1,0 +1,24 @@
+{
+  "changes": [
+    {
+      "file": "project1/src/negative_dot.c",
+      "original_sha256": "7cd7bbbb49defd23db5860d1ce91d92e5c037d5f134c3c4943ff8a3f3702097c",
+      "change": "Only measurement.h include path changed; measured original source preserved in evidence/collected-source/."
+    },
+    {
+      "file": "project1/src/peak.c",
+      "original_sha256": "e72661f1b6bc69c7974d1f2725135e0837a5307c68cd5070cf60dc893d323e00",
+      "change": "Only measurement.h include path changed; measured original source preserved in evidence/collected-source/."
+    },
+    {
+      "file": "project1/src/bench.c",
+      "original_sha256": "c299115f8ddff73d587a7da8314dd5c3f18cb2482f98e36a462ef45a20d80e96",
+      "change": "Only measurement.h include path changed; measured original source preserved in evidence/collected-source/."
+    }
+  ],
+  "raw_records": "Historical commands, paths, timestamps and measured values are retained unchanged.",
+  "post_relocation_validation": {
+    "native_compile_passed": true,
+    "checks": "Six small kernel/type reference checks passed."
+  }
+}
