@@ -100,15 +100,23 @@ def main():
     test('P3: six tail records',len(rows('project3/data/processed/tail_counts.csv'))==6)
     test('P3: block-size and access matrix',all(any(c['bs']==b and c['rw']==r and 'block_pattern' in c['suites'] for c in plans) for b in [4096,16384,32768,65536,131072,262144] for r in ['read','write','randread','randwrite']))
     for suffix in ['before','after','final']:test('P3: environment-'+suffix,(ROOT/f'project3/data/raw/environment-{suffix}.json').exists())
-    for name in ['README.md','AI_USE.md','REPORT.pdf']:
+    for name in ['README.md','AI_USE.md','REPORT.pdf','REPORT.md']:
         test('Unified document: '+name,(ROOT/name).exists())
+    required_figures={
+        1:['baseline_speedup','baseline_throughput','cycles_per_element','alignment_tail','stride','data_type','roofline','report_summary'],
+        2:['working_set_latency','granularity_latency','pattern_rw_granularity','throughput_latency','page_locality','cache_reuse_pitfall','hardware_counters','numeric_cache_correlation','page_offset_control','tiny_cycle_unroll','report_summary'],
+        3:['zero_queue','block_size_pattern','read_write_mix','throughput_latency','tail_latency','tail_histogram','range_and_cache_pitfall','report_summary'],
+    }
+    for n,names in required_figures.items():
+        for name in names:
+            test(f'P{n}: required figure {name}',(ROOT/f'project{n}/figures/{name}.png').is_file())
     for n in [1,2,3]:
         for f in (ROOT/f'project{n}/figures').glob('*.png'):
             test(str(f.relative_to(ROOT))+': PNG',f.read_bytes()[:8]==b'\x89PNG\r\n\x1a\n')
     manifest=[]
     for n in [1,2,3]:
-        paths=[p for p in (ROOT/f'project{n}').rglob('*') if p.is_file() and not any(v in p.parts for v in ['.tools','build','work','__pycache__','.cache']) and p.name not in ['SHA256SUMS','audit.json']]
-        if n==1:paths += [ROOT/f for f in ['README.md','AI_USE.md','REPORT.pdf','.gitignore']]
+        paths=[p for p in (ROOT/f'project{n}').rglob('*') if p.is_file() and not any(v in p.parts for v in ['.tools','build','work','__pycache__','.cache']) and p.name not in ['SHA256SUMS','audit.json','.DS_Store']]
+        if n==1:paths += [ROOT/f for f in ['README.md','AI_USE.md','REPORT.pdf','REPORT.md','.gitignore']]
         hashes=[]
         for p in sorted(paths):
             with p.open('rb') as f:digest=hashlib.file_digest(f,'sha256').hexdigest()
