@@ -1,6 +1,6 @@
 """Audit planned coverage, raw correctness, derived data, PMU exports and integrity."""
 from pathlib import Path
-import csv,gzip,hashlib,json,math,sys,tarfile
+import csv,gzip,hashlib,json,math,sys,tarfile,subprocess
 ROOT=Path(__file__).resolve().parents[2];sys.path.insert(0,str(Path(__file__).resolve().parent))
 from common import now,write_json
 checks=[]
@@ -117,7 +117,8 @@ def main():
         (ROOT/f'project{n}/evidence/SHA256SUMS').write_text('\n'.join(hashes)+'\n')
         manifest.extend(hashes)
     failed=[c for c in checks if not c['passed']]
-    result=dict(captured_utc=now(),passed=not failed,checks=len(checks),failed=failed,integrity_files=len(manifest),project1_primary=1200,project1_extra_negative=30,project1_boundary_checks=324,project2_primary=355,project2_extra_timing=33,project2_PMU_captures=42,project3_performance_runs=141,project3_direction_rows=147,project3_payload_write_bytes=writes,external_submission='GitHub remote not configured; upload pending user destination')
+    remote=subprocess.run(['git','remote','get-url','origin'],cwd=ROOT,capture_output=True,text=True).stdout.strip()
+    result=dict(captured_utc=now(),passed=not failed,checks=len(checks),failed=failed,integrity_files=len(manifest),project1_primary=1200,project1_extra_negative=30,project1_boundary_checks=324,project2_primary=355,project2_extra_timing=33,project2_PMU_captures=42,project3_performance_runs=141,project3_direction_rows=147,project3_payload_write_bytes=writes,external_submission=('Repository: '+remote) if remote else 'No Git remote configured.')
     write_json(ROOT/'project1/evidence/audit.json',result)
     print(json.dumps({k:v for k,v in result.items() if k!='details'},indent=2))
     if failed:sys.exit(1)

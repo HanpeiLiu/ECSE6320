@@ -1,9 +1,9 @@
 {
-  "captured_utc": "2026-10-24T00:25:03.877093+00:00",
+  "captured_utc": "2026-10-24T13:25:12.415950+00:00",
   "passed": true,
   "checks": 2564,
   "failed": [],
-  "integrity_files": 2570,
+  "integrity_files": 2571,
   "project1_primary": 1200,
   "project1_extra_negative": 30,
   "project1_boundary_checks": 324,
@@ -13,5 +13,5 @@
   "project3_performance_runs": 141,
   "project3_direction_rows": 147,
   "project3_payload_write_bytes": 57310568448,
-  "external_submission": "GitHub remote not configured; upload pending user destination"
+  "external_submission": "Repository: git@github.com:HanpeiLiu/ECSE6320.git"
 }
