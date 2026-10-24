@@ -1,4 +1,6 @@
-# AI-use conversation summary
+# AI-use and conversation summary
+
+Codex assisted with experiment design, C/Python code, configuration, debugging, data processing, plots and report drafting. Agent executed real measurements, and compiler/disassembly inspection.
 
 | User request | Codex response and work |
 | --- | --- |
